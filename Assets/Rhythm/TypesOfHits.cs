@@ -8,6 +8,5 @@ class TypesOfHits : MonoBehaviour
         Ok = 45,
         Bad = 70,
         Miss
-
     }
 }

@@ -6,13 +6,11 @@ using UnityEngine.UI;
 
 public class ScoreScript : MonoBehaviour
 {
-    public bool GameOver = false;
+    TypesOfHits.Hits hits;
+    public bool gameOver = false;
     public bool SuccsesHit = false;
-    public const int ScoreHit = 1;
     public const string ScoreText = "Score: ";
     public int Score = 0;
-    private int[] QualityHit = { 1, 2, 3 }; // {0,1,2}
-    private int Hit = 1;
 
 
 
@@ -21,7 +19,9 @@ public class ScoreScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Text.text = ScoreText + 0;
+        Text.text = ScoreText + Score;
+        //int HitsInScore = GetScore(TypesOfHits.Hits.Perfect); 
+        //Text.text = ScoreText + HitsInScore;
     }
 
     // Update is called once per frame
@@ -30,23 +30,47 @@ public class ScoreScript : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             SuccsesHit = true;
+            SuccsesHits();
         }
         if (Input.GetMouseButtonDown(1))
         {
-            GameOver = true;
+            gameOver = true;
+            GameOver();
         }
+    }
+    static int GetScore(TypesOfHits.Hits _hits)
+    {
+        int HitScore = (int)_hits; // Score of Enum(TypesOfHits)
 
-        if (GameOver == true)
+        return HitScore;
+    } 
+    
+    public void GameOver ()
+    {
+        if (gameOver == true)
         {
             Score = 0;
             Text.text = ScoreText + Score;
-            GameOver = false;
+            gameOver = false;
         }
+    }
+    public void SuccsesHits()
+    {
         if (SuccsesHit == true)
         {
-            Score += QualityHit[Hit];
-            Text.text = ScoreText + Score;
+            _AddScore();
             SuccsesHit = false;
         }
+    }
+    public void _AddScore()
+    {
+        int NewScore = GetScore(TypesOfHits.Hits.Perfect);///
+        Score = AddScore(Score, NewScore);
+        Text.text = ScoreText + Score;
+    }
+    public int AddScore(int OldScore, int AddValue)
+    {
+        int res = OldScore + AddValue;
+        return res;
     }
 }
