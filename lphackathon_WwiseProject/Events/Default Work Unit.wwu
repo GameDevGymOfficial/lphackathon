@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{F125AB88-EE99-489F-B796-876314265743}" SchemaVersion="110">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{F125AB88-EE99-489F-B796-876314265743}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Test_Event" ID="{64D1E61C-F443-4708-AC4F-3F9AF94D067E}">
+					<ChildrenList>
+						<Action Name="" ID="{6C1411B7-D692-4CB4-A96F-321FFEA95F4B}" ShortID="645453681">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="GoatScream_com" ID="{67CBC2AC-9260-4946-B1C2-640F41505A95}" WorkUnitID="{16C1F349-5515-4037-AAEB-E96D09A5C22C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
