@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{C82C3FC7-7EC4-4EF5-977A-5F7909FE3447}" SchemaVersion="110">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{C82C3FC7-7EC4-4EF5-977A-5F7909FE3447}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="GoatScream_com" ID="{41591D82-3FED-428F-B598-8A991372F66B}" ShortID="478939678">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10880AAA-5111-4B62-AA62-BB96B1C5E40F}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{25586FAB-828D-4F6D-8388-7340FD169744}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="GoatScream_com" ID="{1E3AB89D-539A-4437-8B07-AC6DE950BDB5}">
+							<Language>SFX</Language>
+							<AudioFile>GoatScream.com.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="995684111"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="GoatScream_com" ID="{1E3AB89D-539A-4437-8B07-AC6DE950BDB5}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

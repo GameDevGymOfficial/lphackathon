@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1936185617	Test_Sound			\Default Work Unit\Test_Sound	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	995684111	GoatScream_com	C:\Users\Alex\Projects\Programming\Unity\!In Progress\lphackathon\lphackathon_WwiseProject\.cache\Windows\SFX\GoatScream.com_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\GoatScream_com		868448
+
