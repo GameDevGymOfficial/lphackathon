@@ -10,6 +10,11 @@ public class MenuManager : MonoBehaviour
     [SerializeField] private GameObject gameUI;
     [SerializeField] private GameObject pauseUI;
 
+    [SerializeField] private GameObject settingsUI;
+
+    [SerializeField] private GameObject gameOverUI;
+    [SerializeField] private GameObject gameWinUI;
+    
     public void Pause()
     {
         gameUI.SetActive(false);
@@ -26,10 +31,33 @@ public class MenuManager : MonoBehaviour
 
         OnResume?.Invoke();
     }
-    
+
+    public void GameOver()
+    {
+        gameUI.SetActive(false);
+        gameOverUI.SetActive(true);
+    }
+    public void WinGame()
+    {
+        gameUI.SetActive(false);
+        gameWinUI.SetActive(true);
+    }
+
+    public void Settings()
+    {
+        settingsUI.SetActive(true);
+    }
+
     public void Play()
     {
         menuUI.SetActive(false);
+        gameUI.SetActive(true);
+    }
+    public void PlayAgain()
+    {
+        pauseUI.SetActive(false);
+        gameOverUI.SetActive(false);
+        gameWinUI.SetActive(false);
         gameUI.SetActive(true);
     }
     public void MainMenu()
