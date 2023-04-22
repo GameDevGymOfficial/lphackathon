@@ -2,14 +2,16 @@ using UnityEngine;
 using System;
 public class NoteObject : MonoBehaviour
 {
-    [SerializeField] private KeyCode rowKeyCode;
-
-    [SerializeField] private ScoreScript score;
-
+    private ScoreScript score;
+    private KeyCode rowKeyCode;
     private bool canBePressed;
     private float buttonPosition;
     private float notePosition;
-
+    private void Start()
+    {
+        rowKeyCode=GetComponentInParent<RowHolder>().RowCode;
+        score = FindObjectOfType<ScoreScript>();
+    }
     private void Update()
     {
         if (Input.GetKeyDown(rowKeyCode))
