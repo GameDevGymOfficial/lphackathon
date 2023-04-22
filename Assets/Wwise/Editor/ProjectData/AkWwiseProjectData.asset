@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 0acfd8e08d80734cb4b1ae1139d67a15
     GuidInternal: 
-    m_lastTime: -8585194571058762836
+    m_lastTime: -8585194461395532636
     List:
     - name: Main_SoundBank
       guid: 341b0b8e7892034a9d197c013bb86b49
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 88ab25f199ee9f48b796876314265743
     GuidInternal: 
-    m_lastTime: -8585194556084122033
+    m_lastTime: -8585194464624635719
     List:
     - name: Hit_Event
       guid: 8da3c971960d5543b2be1ff9c087dec6
@@ -106,10 +106,53 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 88ab25f199ee9f48b796876314265743
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 691db549736cf4449b7e3e04131cd1a8
       - ElementName: Hit_Event
         ObjectType: 3
         guid: 8da3c971960d5543b2be1ff9c087dec6
-      Path: Events\Default Work Unit\Hit_Event
+      Path: Events\Default Work Unit\SFX\Hit_Event
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Lvl_one
+      guid: 51b535faaac4174589e273aa09f9d451
+      id: 177180936
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 88ab25f199ee9f48b796876314265743
+      - ElementName: Music
+        ObjectType: 4
+        guid: d5d194782d1957419d654ca8d1f47757
+      - ElementName: Lvl_one
+        ObjectType: 3
+        guid: 51b535faaac4174589e273aa09f9d451
+      Path: Events\Default Work Unit\Music\Lvl_one
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Menu_music
+      guid: 3fda56e0649be343b61ac683af4505b9
+      id: 4055567060
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 88ab25f199ee9f48b796876314265743
+      - ElementName: Music
+        ObjectType: 4
+        guid: d5d194782d1957419d654ca8d1f47757
+      - ElementName: Menu_music
+        ObjectType: 3
+        guid: 3fda56e0649be343b61ac683af4505b9
+      Path: Events\Default Work Unit\Music\Menu_music
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -123,16 +166,19 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 88ab25f199ee9f48b796876314265743
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 691db549736cf4449b7e3e04131cd1a8
       - ElementName: Miss_Event
         ObjectType: 3
         guid: aa88ee49be98954d9748317cb428a344
-      Path: Events\Default Work Unit\Miss_Event
+      Path: Events\Default Work Unit\SFX\Miss_Event
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Test_Event
-      guid: 1ce6d16443f40847ac4f3f9af94d067e
-      id: 4258653052
+    - name: Music
+      guid: d5d194782d1957419d654ca8d1f47757
+      id: 3991942870
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -140,10 +186,27 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 88ab25f199ee9f48b796876314265743
-      - ElementName: Test_Event
-        ObjectType: 3
-        guid: 1ce6d16443f40847ac4f3f9af94d067e
-      Path: Events\Default Work Unit\Test_Event
+      - ElementName: Music
+        ObjectType: 4
+        guid: d5d194782d1957419d654ca8d1f47757
+      Path: Events\Default Work Unit\Music
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SFX
+      guid: 691db549736cf4449b7e3e04131cd1a8
+      id: 393239870
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 88ab25f199ee9f48b796876314265743
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 691db549736cf4449b7e3e04131cd1a8
+      Path: Events\Default Work Unit\SFX
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -204,7 +267,7 @@ MonoBehaviour:
     m_lastTime: -8585194602136385912
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0500000006000000070000000b0000000c0000000d000000
+  ExpandedWaapiItemIds: 0500000006000000070000000b0000000c000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

@@ -6,6 +6,8 @@
 				<Property Name="Event Action List\{49EE88AA-98BE-4D95-9748-317CB428A344}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{64D1E61C-F443-4708-AC4F-3F9AF94D067E}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{71C9A38D-0D96-4355-B2BE-1FF9C087DEC6}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{E056DA3F-9B64-43E3-B61A-C683AF4505B9}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{FA35B551-C4AA-4517-89E2-73AA09F9D451}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
 					<ValueList>
 						<Value Platform="Windows"></Value>
@@ -21,12 +23,17 @@
 				<Property Name="GenerateSoundBanks\x64_SelectedLanguages" Type="string" Value=""/>
 				<Property Name="GenerateSoundBanks\x64_SelectedPlatforms" Type="string" Value=""/>
 				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value=""/>
+				<Property Name="Interactive Music\x64_{CA577D54-F7D9-44C8-8811-4E79271C830E} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwPy7Ygi3YgixAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
+				<Property Name="Interactive Music\x64_{FF0547C9-6D17-42C3-84C5-E2D1C2B4DB36} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwPy3pUgOcS0FAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
 				<Property Name="MeterView\LastObject1" Type="string" Value="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
 				<Property Name="MeterView\MeterMode1" Type="int32" Value="1"/>
 				<Property Name="MeterView\MeterMode1Viewpoint0" Type="int32" Value="1"/>
 				<Property Name="MeterView\MeterMode1Viewpoint1" Type="int32" Value="2"/>
 				<Property Name="MeterView\MeterMode1Viewpoint2" Type="int32" Value="3"/>
 				<Property Name="MeterView\MeterMode1Viewpoint3" Type="int32" Value="0"/>
+				<Property Name="MonitoringManager\GameObjectFilter\GameObjectFilterVersion" Type="int32" Value="1"/>
+				<Property Name="MonitoringManager\GameObjectFilter\GameObjectFiltersEnable" Type="bool" Value="True"/>
+				<Property Name="MonitoringManager\GameObjectFilter\x64_GameObjectFilters" Type="string" Value=""/>
 				<Property Name="SoundBankHeaderFilePath" Type="string" Value="GeneratedSoundBanks\"/>
 				<Property Name="SoundBankPaths" Type="string">
 					<ValueList>

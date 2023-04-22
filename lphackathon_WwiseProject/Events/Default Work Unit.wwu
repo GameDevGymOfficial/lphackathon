@@ -3,39 +3,64 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{F125AB88-EE99-489F-B796-876314265743}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Test_Event" ID="{64D1E61C-F443-4708-AC4F-3F9AF94D067E}">
+				<Folder Name="Music" ID="{7894D1D5-192D-4157-9D65-4CA8D1F47757}" ShortID="1001767805">
 					<ChildrenList>
-						<Action Name="" ID="{6C1411B7-D692-4CB4-A96F-321FFEA95F4B}" ShortID="645453681">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="GoatScream_com" ID="{67CBC2AC-9260-4946-B1C2-640F41505A95}" WorkUnitID="{16C1F349-5515-4037-AAEB-E96D09A5C22C}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
+						<Event Name="Menu_music" ID="{E056DA3F-9B64-43E3-B61A-C683AF4505B9}">
+							<ChildrenList>
+								<Action Name="" ID="{67DEA52B-DDDD-4775-A8FD-11D794518888}" ShortID="361610081">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="A_New_Planet" ID="{FF0547C9-6D17-42C3-84C5-E2D1C2B4DB36}" WorkUnitID="{CCDFFEEE-BBB8-4A74-9EF4-3EE08B83B71E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Lvl_one" ID="{FA35B551-C4AA-4517-89E2-73AA09F9D451}">
+							<ChildrenList>
+								<Action Name="" ID="{B0499045-19EF-498F-AEEF-DE35B58C69FB}" ShortID="1047895479">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Cold_Space" ID="{CA577D54-F7D9-44C8-8811-4E79271C830E}" WorkUnitID="{CCDFFEEE-BBB8-4A74-9EF4-3EE08B83B71E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
-				</Event>
-				<Event Name="Miss_Event" ID="{49EE88AA-98BE-4D95-9748-317CB428A344}">
+				</Folder>
+				<Folder Name="SFX" ID="{49B51D69-6C73-44F4-9B7E-3E04131CD1A8}" ShortID="1060640831">
 					<ChildrenList>
-						<Action Name="" ID="{730AFEDC-5F37-4192-A062-B6A7290F545B}" ShortID="969280749">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="New Random Container" ID="{441B88C0-F5CA-404C-AA8F-BC3EB6F32DB6}" WorkUnitID="{16C1F349-5515-4037-AAEB-E96D09A5C22C}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
+						<Event Name="Miss_Event" ID="{49EE88AA-98BE-4D95-9748-317CB428A344}">
+							<ChildrenList>
+								<Action Name="" ID="{730AFEDC-5F37-4192-A062-B6A7290F545B}" ShortID="969280749">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="New Random Container" ID="{441B88C0-F5CA-404C-AA8F-BC3EB6F32DB6}" WorkUnitID="{16C1F349-5515-4037-AAEB-E96D09A5C22C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Hit_Event" ID="{71C9A38D-0D96-4355-B2BE-1FF9C087DEC6}">
+							<ChildrenList>
+								<Action Name="" ID="{55B9B95F-84DD-4A5B-AEB9-7918C0871E67}" ShortID="555476108">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="New Random Container_01" ID="{ABC5D258-8A02-4B7B-8F84-5C03BEE32B53}" WorkUnitID="{16C1F349-5515-4037-AAEB-E96D09A5C22C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
-				</Event>
-				<Event Name="Hit_Event" ID="{71C9A38D-0D96-4355-B2BE-1FF9C087DEC6}">
-					<ChildrenList>
-						<Action Name="" ID="{55B9B95F-84DD-4A5B-AEB9-7918C0871E67}" ShortID="555476108">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="New Random Container_01" ID="{ABC5D258-8A02-4B7B-8F84-5C03BEE32B53}" WorkUnitID="{16C1F349-5515-4037-AAEB-E96D09A5C22C}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
