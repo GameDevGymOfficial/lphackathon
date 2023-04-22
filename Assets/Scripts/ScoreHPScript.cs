@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class ScoreHPScript : MonoBehaviour
 {
+    private GameManager gameManager;
+
     [SerializeField] private TextMeshProUGUI Text;
 
     private int score = 0;
@@ -13,9 +15,11 @@ public class ScoreHPScript : MonoBehaviour
 
     public int[] hitCount = new int[5];
 
-    private void Start()
+    private void Awake()
     {
+        gameManager = FindObjectOfType<GameManager>();
     }
+
     private void SetScoreText(int score)
     {
         Text.text = score.ToString();
@@ -59,7 +63,7 @@ public class ScoreHPScript : MonoBehaviour
         }
         if (health == 0)
         {
-            Debug.Log("Game Over");
+            gameManager.Lose();
         }
     }
     public void ChangeHealth(int change)
