@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class MenuManager : MonoBehaviour
 {
+    [SerializeField] private GameObject overlay;
+
     private MenuState previousMenu;
     private MenuState currentMenu;
 
@@ -47,6 +49,9 @@ public class MenuManager : MonoBehaviour
 
     private void Update()
     {
+        if (SettingsManager.IsBinding)
+            return;
+
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (currentMenu == GameMenu)
@@ -62,6 +67,15 @@ public class MenuManager : MonoBehaviour
                 Back();
             }
         }
+    }
+
+    public void EnableOverlay()
+    {
+        overlay.SetActive(true);
+    }
+    public void DisableOverlay()
+    {
+        overlay.SetActive(false);
     }
 
     public void Back() => SwitchMenu(previousMenu);
