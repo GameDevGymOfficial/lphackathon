@@ -697,7 +697,6 @@ GameObject:
   - component: {fileID: 5245040561814126632}
   - component: {fileID: 2040567038724495931}
   - component: {fileID: 8757379635549022795}
-  - component: {fileID: 4004071734092024413}
   m_Layer: 5
   m_Name: Settings Panel
   m_TagString: Untagged
@@ -767,26 +766,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &4004071734092024413
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2685754319508471206}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 57afbbd0517f7414f9a456f5be5b4e41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  keysTexts:
-  - {fileID: 3289867165276999377}
-  - {fileID: 1334920392200864342}
-  - {fileID: 214526882445194680}
-  - {fileID: 5440737511482116928}
-  masterVolumeSlider: {fileID: 1193082612046313720}
-  musicVolumeSlider: {fileID: 8231060829080864969}
-  sfxVolumeSlider: {fileID: 3666888260879531321}
 --- !u!1 &4942942481593265229
 GameObject:
   m_ObjectHideFlags: 0
@@ -1636,6 +1615,7 @@ GameObject:
   - component: {fileID: 4942942483245700343}
   - component: {fileID: 4942942483245700342}
   - component: {fileID: 4942942483245700330}
+  - component: {fileID: 7444164679573585255}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1751,6 +1731,26 @@ MonoBehaviour:
   gameOverUI: {fileID: 4942942482417179994}
   mainUI: {fileID: 767126487351691429}
   settingsUI: {fileID: 2685754319508471206}
+--- !u!114 &7444164679573585255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4942942483245700329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57afbbd0517f7414f9a456f5be5b4e41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keysTexts:
+  - {fileID: 3289867165276999377}
+  - {fileID: 1334920392200864342}
+  - {fileID: 214526882445194680}
+  - {fileID: 5440737511482116928}
+  masterVolumeSlider: {fileID: 1193082612046313720}
+  musicVolumeSlider: {fileID: 8231060829080864969}
+  sfxVolumeSlider: {fileID: 3666888260879531321}
 --- !u!1 &4942942483552962037
 GameObject:
   m_ObjectHideFlags: 0
@@ -2206,7 +2206,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 4004071734092024413}
+      objectReference: {fileID: 0}
     - target: {fileID: 1863527405539912169, guid: a4c1c4403a7d60746896ce2594772c21,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
@@ -3902,7 +3902,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 4004071734092024413}
+      objectReference: {fileID: 0}
     - target: {fileID: 1863527405539912169, guid: a4c1c4403a7d60746896ce2594772c21,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
@@ -4349,7 +4349,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 4004071734092024413}
+      objectReference: {fileID: 0}
     - target: {fileID: 1863527405539912169, guid: a4c1c4403a7d60746896ce2594772c21,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
@@ -4701,7 +4701,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 4004071734092024413}
+      objectReference: {fileID: 0}
     - target: {fileID: 1863527405539912169, guid: a4c1c4403a7d60746896ce2594772c21,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState

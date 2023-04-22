@@ -1,17 +1,21 @@
-using UnityEngine;
 using System;
+using UnityEngine;
+
 public class NoteObject : MonoBehaviour
 {
-    private ScoreScript score;
-    private KeyCode rowKeyCode;
+    private ScoreHPScript score;
+    [SerializeField]private KeyCode rowKeyCode;
     private bool canBePressed;
     private float buttonPosition;
     private float notePosition;
+
     private void Start()
     {
-        rowKeyCode=GetComponentInParent<RowHolder>().RowCode;
-        score = FindObjectOfType<ScoreScript>();
+        rowKeyCode = GetComponentInParent<RowHolder>().RowCode;
+
+        score = FindObjectOfType<ScoreHPScript>();
     }
+
     private void Update()
     {
         if (Input.GetKeyDown(rowKeyCode))
@@ -22,10 +26,10 @@ public class NoteObject : MonoBehaviour
             }
         }
     }
-    
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("Button"))
+        if (collision.CompareTag("Button"))
         {
             canBePressed = true;
             buttonPosition = collision.transform.position.y;
@@ -38,7 +42,7 @@ public class NoteObject : MonoBehaviour
             canBePressed = false;
         }
     }
-    
+
     private void HitLogic()
     {
         notePosition = gameObject.transform.position.y;

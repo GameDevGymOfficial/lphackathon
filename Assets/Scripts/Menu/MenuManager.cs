@@ -27,8 +27,12 @@ public class MenuManager : MonoBehaviour
     public MenuState MainMenu { get; private set; }
     public MenuState SettingsMenu { get; private set; }
 
+    private GameManager gameManager;
+
     private void Awake()
     {
+        gameManager = FindObjectOfType<GameManager>();
+
         GameMenu = new MenuState(gameUI);
         PauseMenu = new MenuState(pauseUI);
         GameWinMenu = new MenuState(gameWinUI);
@@ -56,11 +60,11 @@ public class MenuManager : MonoBehaviour
         {
             if (currentMenu == GameMenu)
             {
-                SwitchMenu(PauseMenu);
+                gameManager.Pause();
             }
             else if (currentMenu == PauseMenu)
             {
-                SwitchMenu(GameMenu);
+                gameManager.Resume();
             }
             else if (currentMenu == SettingsMenu)
             {

@@ -1,24 +1,25 @@
 using TMPro;
 using UnityEngine;
 
-public class ScoreScript : MonoBehaviour
+public class ScoreHPScript : MonoBehaviour
 {
-    [SerializeField] TextMeshProUGUI Text;
+    [SerializeField] private TextMeshProUGUI Text;
 
-    private int Score = 0;
+    private int score = 0;
     private int health = 6;
-    private const float NOTE_VALUE= 100;
+    private const float NOTE_VALUE = 100;
     private float coefficient;
-    private int combo=0;
+    private int combo = 0;
 
     public int[] hitCount = new int[5];
-    private const string SCORE_TEXT = "Score: ";
 
-    void Start()
+    private void Start()
     {
-        Text.text = SCORE_TEXT + Score;
     }
-
+    private void SetScoreText(int score)
+    {
+        Text.text = score.ToString();
+    }
     public void AddScore(TypesOfHits.Hits hits)
     {
         switch (hits)
@@ -41,7 +42,7 @@ public class ScoreScript : MonoBehaviour
             case TypesOfHits.Hits.Bad:
                 coefficient = 0.4f;
                 hitCount[3]++;
-                combo=0;
+                combo = 0;
                 break;
             case TypesOfHits.Hits.Miss:
                 coefficient = 0f;
@@ -50,13 +51,13 @@ public class ScoreScript : MonoBehaviour
                 ChangeHealth(-1);
                 break;
         }
-        Score += (int)(NOTE_VALUE * coefficient);
-        Text.text = SCORE_TEXT + Score;
-        if(combo%10==0)
+        score += (int)(NOTE_VALUE * coefficient);
+        SetScoreText(score);
+        if (combo % 10 == 0)
         {
             ChangeHealth(1);
         }
-        if(health==0)
+        if (health == 0)
         {
             Debug.Log("Game Over");
         }
