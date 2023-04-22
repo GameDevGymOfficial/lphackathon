@@ -1,5 +1,5 @@
 using UnityEngine;
-class TypesOfHits : MonoBehaviour
+public class TypesOfHits : MonoBehaviour
 {
     public enum Hits
     {
