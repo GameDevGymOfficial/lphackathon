@@ -5,7 +5,9 @@
 			<ChildrenList>
 				<SoundBank Name="Main_SoundBank" ID="{8E0B1B34-9278-4A03-9D19-7C013BB86B49}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Hit_Event" ID="{71C9A38D-0D96-4355-B2BE-1FF9C087DEC6}" WorkUnitID="{F125AB88-EE99-489F-B796-876314265743}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Test_Event" ID="{64D1E61C-F443-4708-AC4F-3F9AF94D067E}" WorkUnitID="{F125AB88-EE99-489F-B796-876314265743}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Miss_Event" ID="{49EE88AA-98BE-4D95-9748-317CB428A344}" WorkUnitID="{F125AB88-EE99-489F-B796-876314265743}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

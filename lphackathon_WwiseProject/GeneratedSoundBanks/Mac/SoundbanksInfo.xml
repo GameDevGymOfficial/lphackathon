@@ -22,16 +22,54 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="2228651116" Type="User" Language="SFX" Hash="{FBED1CE1-51EA-CC27-EA6F-C09D70CE18CA}">
+		<SoundBank Id="2228651116" Type="User" Language="SFX" Hash="{66A29DB6-871E-CFD9-6100-E43A3A1B32DC}">
 			<ShortName>Main_SoundBank</ShortName>
 			<Path>Main_SoundBank.bnk</Path>
 			<Media>
+				<File Id="183127534" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Hit_Hurt10.wav</ShortName>
+					<CachePath>SFX/Hit_Hurt10_10C4C929.wem</CachePath>
+				</File>
+				<File Id="226741675" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Explosion.wav</ShortName>
+					<CachePath>SFX/Explosion_10C4C929.wem</CachePath>
+				</File>
+				<File Id="388262762" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Hit_Hurt4.wav</ShortName>
+					<CachePath>SFX/Hit_Hurt4_10C4C929.wem</CachePath>
+				</File>
 				<File Id="486226277" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GoatScream.com.wav</ShortName>
 					<CachePath>SFX/GoatScream.com_10C4C929.wem</CachePath>
 				</File>
+				<File Id="846654128" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Explosion10.wav</ShortName>
+					<CachePath>SFX/Explosion10_10C4C929.wem</CachePath>
+				</File>
+				<File Id="870883531" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Hit_Hurt.wav</ShortName>
+					<CachePath>SFX/Hit_Hurt_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1066614353" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Hit_Hurt6.wav</ShortName>
+					<CachePath>SFX/Hit_Hurt6_10C4C929.wem</CachePath>
+				</File>
 			</Media>
 			<Events>
+				<Event Id="577874077" Name="Hit_Event" DurationType="OneShot" DurationMin="0.115011334" DurationMax="0.121768706">
+					<MediaRefs>
+						<MediaRef Id="226741675"/>
+						<MediaRef Id="846654128"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1131770108" Name="Miss_Event" DurationType="OneShot" DurationMin="0.115011334" DurationMax="0.17585035">
+					<MediaRefs>
+						<MediaRef Id="183127534"/>
+						<MediaRef Id="388262762"/>
+						<MediaRef Id="870883531"/>
+						<MediaRef Id="1066614353"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="4258653052" Name="Test_Event" DurationType="OneShot" DurationMin="4.9226303" DurationMax="4.9226303">
 					<MediaRefs>
 						<MediaRef Id="486226277"/>
@@ -40,5 +78,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{325AD82A-AA4C-7FEB-FE57-0E65A606A07C}</FileHash>
+	<FileHash>{0C5A83ED-DC8E-CD88-C7C1-7E57310272D4}</FileHash>
 </SoundBanksInfo>

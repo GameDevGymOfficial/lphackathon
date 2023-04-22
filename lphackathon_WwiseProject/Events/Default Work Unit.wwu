@@ -14,6 +14,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Miss_Event" ID="{49EE88AA-98BE-4D95-9748-317CB428A344}">
+					<ChildrenList>
+						<Action Name="" ID="{730AFEDC-5F37-4192-A062-B6A7290F545B}" ShortID="969280749">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="New Random Container" ID="{441B88C0-F5CA-404C-AA8F-BC3EB6F32DB6}" WorkUnitID="{16C1F349-5515-4037-AAEB-E96D09A5C22C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Hit_Event" ID="{71C9A38D-0D96-4355-B2BE-1FF9C087DEC6}">
+					<ChildrenList>
+						<Action Name="" ID="{55B9B95F-84DD-4A5B-AEB9-7918C0871E67}" ShortID="555476108">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="New Random Container_01" ID="{ABC5D258-8A02-4B7B-8F84-5C03BEE32B53}" WorkUnitID="{16C1F349-5515-4037-AAEB-E96D09A5C22C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

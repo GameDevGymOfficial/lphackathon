@@ -1,6 +1,14 @@
 Event	ID	Name			Wwise Object Path	Notes
+	577874077	Hit_Event			\Default Work Unit\Hit_Event	
+	1131770108	Miss_Event			\Default Work Unit\Miss_Event	
 	4258653052	Test_Event			\Default Work Unit\Test_Event	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	486226277	GoatScream_com	C:\Users\Alex\Projects\Programming\Unity\!In Progress\lphackathon\lphackathon_WwiseProject\.cache\Windows\SFX\GoatScream.com_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\GoatScream_com		868448
+	183127534	Hit_Hurt10	D:\lphackathon\lphackathon_WwiseProject\.cache\Windows\SFX\Hit_Hurt10_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\New Random Container\Hit_Hurt10		10240
+	226741675	Explosion	D:\lphackathon\lphackathon_WwiseProject\.cache\Windows\SFX\Explosion_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\New Random Container_01\Explosion		10240
+	388262762	Hit_Hurt4	D:\lphackathon\lphackathon_WwiseProject\.cache\Windows\SFX\Hit_Hurt4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\New Random Container\Hit_Hurt4		15606
+	486226277	GoatScream_com	D:\lphackathon\lphackathon_WwiseProject\.cache\Windows\SFX\GoatScream.com_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\GoatScream_com		868448
+	846654128	Explosion10	D:\lphackathon\lphackathon_WwiseProject\.cache\Windows\SFX\Explosion10_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\New Random Container_01\Explosion10		10836
+	870883531	Hit_Hurt	D:\lphackathon\lphackathon_WwiseProject\.cache\Windows\SFX\Hit_Hurt_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\New Random Container\Hit_Hurt		10240
+	1066614353	Hit_Hurt6	D:\lphackathon\lphackathon_WwiseProject\.cache\Windows\SFX\Hit_Hurt6_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\New Random Container\Hit_Hurt6		10240
 
