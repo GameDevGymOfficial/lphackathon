@@ -381,6 +381,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8758795f438efa94fbc7c7d2a4fa9457, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rowKeyCode: 0
 --- !u!212 &378219522
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -679,6 +680,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8758795f438efa94fbc7c7d2a4fa9457, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rowKeyCode: 0
 --- !u!212 &611422933
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -837,6 +839,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8758795f438efa94fbc7c7d2a4fa9457, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rowKeyCode: 0
 --- !u!212 &738667152
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1067,7 +1070,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05e48b95c2dae904e8a89b1d56f8242b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <RowCode>k__BackingField: 102
+  <Index>k__BackingField: 0
 --- !u!114 &825724827
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1397,7 +1400,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05e48b95c2dae904e8a89b1d56f8242b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <RowCode>k__BackingField: 107
+  <Index>k__BackingField: 0
 --- !u!114 &996334722
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1601,6 +1604,64 @@ MonoBehaviour:
   unloadTriggerList: 958ca0ea
   bankNameInternal: 
   valueGuidInternal: 
+--- !u!1 &1162588002
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1162588004}
+  - component: {fileID: 1162588003}
+  m_Layer: 0
+  m_Name: WwiseGlobal
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1162588003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1162588002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aed5ca90ad2b384ebbb7c7fee348ad0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InitializationSettings: {fileID: 11400000, guid: e5a3cd60c945560448bc4d8badae6e02,
+    type: 2}
+  basePath: 
+  language: 
+  defaultPoolSize: 0
+  lowerPoolSize: 0
+  streamingPoolSize: 0
+  memoryCutoffThreshold: 0
+  monitorPoolSize: 0
+  monitorQueuePoolSize: 0
+  callbackManagerBufferSize: 0
+  spatialAudioPoolSize: 0
+  maxSoundPropagationDepth: 0
+  engineLogging: 0
+--- !u!4 &1162588004
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1162588002}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1178714653
 GameObject:
   m_ObjectHideFlags: 0
@@ -1631,7 +1692,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05e48b95c2dae904e8a89b1d56f8242b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <RowCode>k__BackingField: 106
+  <Index>k__BackingField: 0
 --- !u!114 &1178714655
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1725,6 +1786,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8758795f438efa94fbc7c7d2a4fa9457, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rowKeyCode: 0
 --- !u!212 &1182747648
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2074,6 +2136,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8758795f438efa94fbc7c7d2a4fa9457, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rowKeyCode: 0
 --- !u!212 &1677111268
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2223,6 +2286,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8758795f438efa94fbc7c7d2a4fa9457, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rowKeyCode: 0
 --- !u!212 &1810534541
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2472,6 +2536,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8758795f438efa94fbc7c7d2a4fa9457, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rowKeyCode: 0
 --- !u!212 &1833085864
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2555,7 +2620,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05e48b95c2dae904e8a89b1d56f8242b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <RowCode>k__BackingField: 100
+  <Index>k__BackingField: 0
 --- !u!114 &1848688378
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2720,6 +2785,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8758795f438efa94fbc7c7d2a4fa9457, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rowKeyCode: 0
 --- !u!212 &2033119884
 SpriteRenderer:
   m_ObjectHideFlags: 0
