@@ -7,7 +7,6 @@ public class LevelManager : MonoBehaviour
     public UnityEvent OnMainMenuLoad;
     public UnityEvent OnNextLevelLoad;
 
-    private static int currentLevelIndex = 0;
     private const int maxLevelindex = 3;
     
     public void LoadMainMenu()
@@ -16,29 +15,8 @@ public class LevelManager : MonoBehaviour
         OnMainMenuLoad?.Invoke();
     }
 
-    public void LoadFirstLevel()
+    public void LoadLevel(int index)
     {
-        currentLevelIndex = 1;
-
-        SceneManager.LoadScene(currentLevelIndex);
-    }
-
-    public void ReloadLevel()
-    {
-        SceneManager.LoadScene(currentLevelIndex);
-        OnNextLevelLoad?.Invoke();
-    }
-    public void LoadNextLevel()
-    {
-        currentLevelIndex++;
-
-        if (currentLevelIndex > maxLevelindex)
-        {
-            currentLevelIndex = 0;
-            LoadMainMenu();
-        }
-
-        SceneManager.LoadScene(currentLevelIndex);
-        OnNextLevelLoad?.Invoke();
+        SceneManager.LoadScene(index);
     }
 }

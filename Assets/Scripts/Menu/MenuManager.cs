@@ -7,6 +7,7 @@ public class MenuManager : MonoBehaviour
     private MenuState previousMenu;
     private MenuState currentMenu;
 
+    [SerializeField] private GameObject uibg;
     [SerializeField] private bool isGameScene = true;
 
     [SerializeField] private GameObject gameUI;
@@ -16,6 +17,7 @@ public class MenuManager : MonoBehaviour
     [SerializeField] private GameObject gameOverUI;
 
     [SerializeField] private GameObject mainUI;
+    [SerializeField] private GameObject lvlSelectionMenu;
     [SerializeField] private GameObject settingsUI;
 
     public MenuState GameMenu { get; private set; }
@@ -25,6 +27,7 @@ public class MenuManager : MonoBehaviour
     public MenuState GameOverMenu { get; private set; }
 
     public MenuState MainMenu { get; private set; }
+    public MenuState LVLSelectionMenu { get; private set; }
     public MenuState SettingsMenu { get; private set; }
 
     private GameManager gameManager;
@@ -39,14 +42,17 @@ public class MenuManager : MonoBehaviour
         GameOverMenu = new MenuState(gameOverUI);
 
         MainMenu = new MenuState(mainUI);
+        LVLSelectionMenu = new MenuState(lvlSelectionMenu);
         SettingsMenu = new MenuState(settingsUI);
 
         if (isGameScene)
         {
+            uibg.SetActive(false);
             SwitchMenu(GameMenu);
         }
         else
         {
+            uibg.SetActive(true);
             SwitchMenu(MainMenu);
         }
     }
@@ -84,6 +90,7 @@ public class MenuManager : MonoBehaviour
 
     public void Back() => SwitchMenu(previousMenu);
     public void Settings() => SwitchMenu(SettingsMenu);
+    public void SelectLevel() => SwitchMenu(LVLSelectionMenu);
 
     public void SwitchMenu(MenuState newMenuState)
     {

@@ -1,0 +1,1817 @@
+fileFormatVersion: 2
+guid: 91b4ab14a426ea7498ebd3daf60589ca
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 48
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Earth-Like_planet_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 7
+        width: 80
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82f50957e2e5c06489d2676197a1ef50
+      internalID: 947756167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth-Like_planet_1
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 7
+        width: 79
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2865851cfec5a545ade5252ab4f231e
+      internalID: -1072981151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth-Like_planet_2
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 7
+        width: 83
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe640e8b314beb44e9291b12389f3e19
+      internalID: -448470763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth-Like_planet_3
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 7
+        width: 79
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b158ce005b770f447bf93a30dab09ce7
+      internalID: 1750691836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth-Like_planet_4
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 7
+        width: 80
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 121dcb24084012940baf1eb21e367c37
+      internalID: -1351530556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth-Like_planet_5
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 7
+        width: 80
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46e20420994778a47a19a3a85e524809
+      internalID: 1497576019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth-Like_planet_6
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 7
+        width: 79
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e05f579e662e484cb7917422f467d98
+      internalID: -487796546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth-Like_planet_7
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 7
+        width: 79
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71c1189ceac9a4f49bf62fa261d01dfe
+      internalID: 528292366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth-Like_planet_8
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 7
+        width: 79
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d7ab2122befdd946bf1044dd86ce518
+      internalID: -339678566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth-Like_planet_9
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 7
+        width: 80
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 939e3dbaa64850c41ba651142cc4c7d3
+      internalID: 1142540680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth-Like_planet_10
+      rect:
+        serializedVersion: 2
+        x: 967
+        y: 7
+        width: 80
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f17d47c1fba55ed4bae653497de0edd7
+      internalID: -1291352452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth-Like_planet_11
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 7
+        width: 79
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4657849ce48beb84f85ac7171a887e09
+      internalID: -2047269288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth-Like_planet_12
+      rect:
+        serializedVersion: 2
+        x: 1159
+        y: 7
+        width: 79
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6568c39d0d3d9874d81a89799cd5b98b
+      internalID: -216914122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth-Like_planet_13
+      rect:
+        serializedVersion: 2
+        x: 1256
+        y: 7
+        width: 79
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d44105f59a6c2c3408a49a1255a0a7e5
+      internalID: 203473173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth-Like_planet_14
+      rect:
+        serializedVersion: 2
+        x: 1354
+        y: 7
+        width: 79
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 130dd710fced6484aa8f968ad163ff74
+      internalID: 1484429757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth-Like_planet_15
+      rect:
+        serializedVersion: 2
+        x: 1447
+        y: 7
+        width: 80
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c270b079229fe564c93143ba34c05189
+      internalID: 573056785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth-Like_planet_16
+      rect:
+        serializedVersion: 2
+        x: 1545
+        y: 7
+        width: 79
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95a44fc26cdc4594aaf823cc1e43c731
+      internalID: 1687049480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth-Like_planet_17
+      rect:
+        serializedVersion: 2
+        x: 1639
+        y: 7
+        width: 79
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b55ff82b618f8b04b8133f84e862eaea
+      internalID: 442401768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth-Like_planet_18
+      rect:
+        serializedVersion: 2
+        x: 1736
+        y: 7
+        width: 80
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dff4f24353e63249b2684a5168f2c2e
+      internalID: -1530171905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth-Like_planet_19
+      rect:
+        serializedVersion: 2
+        x: 1834
+        y: 7
+        width: 79
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d8b44e09e40d3f4cbe76bf730f5c4d4
+      internalID: 213411868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth-Like_planet_20
+      rect:
+        serializedVersion: 2
+        x: 1927
+        y: 7
+        width: 80
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aceb1a856b9fde0459fc86b0ad4ff72f
+      internalID: 2143716455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth-Like_planet_21
+      rect:
+        serializedVersion: 2
+        x: 2025
+        y: 7
+        width: 79
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5603bac89b177d94f9fe6a76d80ce8e2
+      internalID: 240754550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth-Like_planet_22
+      rect:
+        serializedVersion: 2
+        x: 2119
+        y: 7
+        width: 79
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71a44b377ad52c24fae740fd116c1b95
+      internalID: 628200710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth-Like_planet_23
+      rect:
+        serializedVersion: 2
+        x: 2216
+        y: 7
+        width: 80
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08ed829e4f4ad9d49956dd29b8f45ddc
+      internalID: -721696686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth-Like_planet_24
+      rect:
+        serializedVersion: 2
+        x: 2314
+        y: 7
+        width: 79
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 398790f7da8c73c43981c09e3087c94d
+      internalID: 1253247886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth-Like_planet_25
+      rect:
+        serializedVersion: 2
+        x: 2407
+        y: 7
+        width: 80
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b4723c04497df7488f60d4e1a916ee0
+      internalID: 1569550830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth-Like_planet_26
+      rect:
+        serializedVersion: 2
+        x: 2505
+        y: 7
+        width: 79
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 132b3d29defe634438b2125a04a921ef
+      internalID: -1897875465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth-Like_planet_27
+      rect:
+        serializedVersion: 2
+        x: 2599
+        y: 7
+        width: 79
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 489026b72d635cc41900698932887661
+      internalID: 1317713168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth-Like_planet_28
+      rect:
+        serializedVersion: 2
+        x: 2696
+        y: 7
+        width: 80
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c390786a24481643b81088bbc5e2f55
+      internalID: -716571687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth-Like_planet_29
+      rect:
+        serializedVersion: 2
+        x: 2794
+        y: 7
+        width: 79
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9c192ab680c6184180cfac3bea8de2b
+      internalID: 1295662954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth-Like_planet_30
+      rect:
+        serializedVersion: 2
+        x: 2888
+        y: 7
+        width: 79
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83aa006b684f70340a62a0c3101dce9a
+      internalID: 2134539311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth-Like_planet_31
+      rect:
+        serializedVersion: 2
+        x: 2985
+        y: 7
+        width: 79
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ca8d755a74d53a4daeaa792e5f7bb2b
+      internalID: 1268013040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth-Like_planet_32
+      rect:
+        serializedVersion: 2
+        x: 3079
+        y: 7
+        width: 79
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ec928e2bc2dd984888c51429fb35b52
+      internalID: 744991191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth-Like_planet_33
+      rect:
+        serializedVersion: 2
+        x: 3176
+        y: 7
+        width: 80
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1962f277db1ecc4bacfae40203ea5bd
+      internalID: 1088555488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth-Like_planet_34
+      rect:
+        serializedVersion: 2
+        x: 3274
+        y: 7
+        width: 79
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 475c93bf75897c846b935fd8e1aed241
+      internalID: -430960333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth-Like_planet_35
+      rect:
+        serializedVersion: 2
+        x: 3368
+        y: 7
+        width: 79
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5388b16f6dd9d546b70e88ce9661eef
+      internalID: 615883094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth-Like_planet_36
+      rect:
+        serializedVersion: 2
+        x: 3465
+        y: 7
+        width: 79
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bc27230667c7dd46ad2efe53d669116
+      internalID: -1688852212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth-Like_planet_37
+      rect:
+        serializedVersion: 2
+        x: 3559
+        y: 7
+        width: 79
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cc5e67640cf28442977ad84441958fd
+      internalID: -1250379886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth-Like_planet_38
+      rect:
+        serializedVersion: 2
+        x: 3656
+        y: 7
+        width: 80
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d9490480172f0542aa88a1127288bef
+      internalID: -1217385380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth-Like_planet_39
+      rect:
+        serializedVersion: 2
+        x: 3754
+        y: 7
+        width: 79
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c4c1c33625339648919d031474c8124
+      internalID: 709382009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth-Like_planet_40
+      rect:
+        serializedVersion: 2
+        x: 3848
+        y: 7
+        width: 79
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7153eec133dbd9c4a83078d226443741
+      internalID: -186158872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth-Like_planet_41
+      rect:
+        serializedVersion: 2
+        x: 3945
+        y: 7
+        width: 79
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07ad69b5ebcde714681d5108b6d6cd71
+      internalID: 945151515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth-Like_planet_42
+      rect:
+        serializedVersion: 2
+        x: 4039
+        y: 7
+        width: 79
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bbc54228d6b69e4192aea8d83bb43e8
+      internalID: 1260214604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth-Like_planet_43
+      rect:
+        serializedVersion: 2
+        x: 4136
+        y: 7
+        width: 80
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2ba2dde9a1160b468a814c88edf4ab0
+      internalID: -664125248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth-Like_planet_44
+      rect:
+        serializedVersion: 2
+        x: 4234
+        y: 7
+        width: 79
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba85f598c3315d448861cd8740fcf9dc
+      internalID: -1234262153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth-Like_planet_45
+      rect:
+        serializedVersion: 2
+        x: 4328
+        y: 7
+        width: 79
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce7faca0bbf71ea46ab097f555b2d1ff
+      internalID: 1292588108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth-Like_planet_46
+      rect:
+        serializedVersion: 2
+        x: 4425
+        y: 7
+        width: 80
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e4d6d79ad07d0547b3852c9010fe26b
+      internalID: -1910048601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth-Like_planet_47
+      rect:
+        serializedVersion: 2
+        x: 4519
+        y: 7
+        width: 79
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3ebf0dd99cf10f47abbc58e5ec3ec8f
+      internalID: -1072470256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth-Like_planet_48
+      rect:
+        serializedVersion: 2
+        x: 4616
+        y: 7
+        width: 80
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44ca51de6de8fdc40b42a7e0f01ca30d
+      internalID: -543208179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth-Like_planet_49
+      rect:
+        serializedVersion: 2
+        x: 4714
+        y: 7
+        width: 79
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 340a365e444158846ac34dd97c0340e2
+      internalID: 1537190314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth-Like_planet_50
+      rect:
+        serializedVersion: 2
+        x: 4808
+        y: 7
+        width: 79
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d718656bd6fb7d348b2aa311d0125601
+      internalID: 1477201633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth-Like_planet_51
+      rect:
+        serializedVersion: 2
+        x: 4905
+        y: 7
+        width: 80
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 910335fb059fe5c46b713d7cb11ff213
+      internalID: -2025125152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth-Like_planet_52
+      rect:
+        serializedVersion: 2
+        x: 4999
+        y: 7
+        width: 79
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d6048c92c66f874e9855fca74babd5d
+      internalID: -1668283177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth-Like_planet_53
+      rect:
+        serializedVersion: 2
+        x: 5096
+        y: 7
+        width: 80
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b05197cf07a78a34a807d25a2165b676
+      internalID: 1388659127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth-Like_planet_54
+      rect:
+        serializedVersion: 2
+        x: 5194
+        y: 7
+        width: 79
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fba51edb7f75d0b48b186e6bb06136c0
+      internalID: -1610494761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth-Like_planet_55
+      rect:
+        serializedVersion: 2
+        x: 5288
+        y: 7
+        width: 79
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f365866935e529b478242749a82a70d7
+      internalID: 1466976945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth-Like_planet_56
+      rect:
+        serializedVersion: 2
+        x: 5385
+        y: 7
+        width: 80
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f9d625ce95482842be8d1c57e46c857
+      internalID: -243186886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth-Like_planet_57
+      rect:
+        serializedVersion: 2
+        x: 5479
+        y: 7
+        width: 79
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23680752a7c8bb1499eb3dfe7d6914d9
+      internalID: -1520917054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth-Like_planet_58
+      rect:
+        serializedVersion: 2
+        x: 5576
+        y: 7
+        width: 80
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e428ef7d3200dd48b8e468c885bb30d
+      internalID: 1842179261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth-Like_planet_59
+      rect:
+        serializedVersion: 2
+        x: 5674
+        y: 7
+        width: 79
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7283b09b7d73f3e418335e418a116b89
+      internalID: 1470843185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth-Like_planet_60
+      rect:
+        serializedVersion: 2
+        x: 5768
+        y: 7
+        width: 79
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86921aab417c8e74aadfaacef8da2192
+      internalID: 545385153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth-Like_planet_61
+      rect:
+        serializedVersion: 2
+        x: 5865
+        y: 7
+        width: 80
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23a9836a5784bc84195198f9cf15c8c6
+      internalID: 1064285318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth-Like_planet_62
+      rect:
+        serializedVersion: 2
+        x: 5959
+        y: 7
+        width: 79
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0c052533e270ef4ea47dd4d8a7c94fd
+      internalID: -1797028975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth-Like_planet_63
+      rect:
+        serializedVersion: 2
+        x: 6057
+        y: 7
+        width: 79
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a4724d1e8bd227468e747a8ead1bdb9
+      internalID: -447037213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth-Like_planet_64
+      rect:
+        serializedVersion: 2
+        x: 6154
+        y: 7
+        width: 79
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0349c4348fc0b474f960d55f62fe7a4b
+      internalID: 1769321901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth-Like_planet_65
+      rect:
+        serializedVersion: 2
+        x: 6248
+        y: 7
+        width: 79
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf6aeece168b0f847a0010391c2701cc
+      internalID: 671894487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth-Like_planet_66
+      rect:
+        serializedVersion: 2
+        x: 6345
+        y: 7
+        width: 80
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a1cbcc42d0b5b74881d9598f975e2fb
+      internalID: 17737960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth-Like_planet_67
+      rect:
+        serializedVersion: 2
+        x: 6439
+        y: 7
+        width: 80
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 373ed79a309b90d43be93235815c0cb1
+      internalID: -215798253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth-Like_planet_68
+      rect:
+        serializedVersion: 2
+        x: 6537
+        y: 7
+        width: 79
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 455beecb9f251f047a6a5ef7adc52925
+      internalID: 918263420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth-Like_planet_69
+      rect:
+        serializedVersion: 2
+        x: 6634
+        y: 7
+        width: 79
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d11a0ef822f2b9543abd0dcedf145696
+      internalID: 1737662193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth-Like_planet_70
+      rect:
+        serializedVersion: 2
+        x: 6728
+        y: 7
+        width: 79
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57ae38781fa9d0641874467f1c63e7d6
+      internalID: -569000116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth-Like_planet_71
+      rect:
+        serializedVersion: 2
+        x: 6825
+        y: 7
+        width: 80
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 766f83b224cc5ef479154eb96e249454
+      internalID: -61749012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth-Like_planet_72
+      rect:
+        serializedVersion: 2
+        x: 6919
+        y: 7
+        width: 80
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb1a66059ed68e54c9c7aeacfc2eee47
+      internalID: 1385558358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth-Like_planet_73
+      rect:
+        serializedVersion: 2
+        x: 7017
+        y: 7
+        width: 79
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17acf04b9a27d1f4e8c37c599010db6b
+      internalID: -7504245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth-Like_planet_74
+      rect:
+        serializedVersion: 2
+        x: 7110
+        y: 7
+        width: 83
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb296019f9ee5ed489e5545aa66590b1
+      internalID: 129266377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth-Like_planet_75
+      rect:
+        serializedVersion: 2
+        x: 7208
+        y: 7
+        width: 79
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc153cad6c6a3064aa9cbd1f36ad83d8
+      internalID: -738322309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth-Like_planet_76
+      rect:
+        serializedVersion: 2
+        x: 7305
+        y: 7
+        width: 80
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01b67ff7b02c75d42b5abf390244df70
+      internalID: -1099708695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: a6dbca9181ffa74459cf2e382518bd1c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Earth-Like_planet_33: 1088555488
+      Earth-Like_planet_26: -1897875465
+      Earth-Like_planet_62: -1797028975
+      Earth-Like_planet_2: -448470763
+      Earth-Like_planet_55: 1466976945
+      Earth-Like_planet_6: -487796546
+      Earth-Like_planet_40: -186158872
+      Earth-Like_planet_21: 240754550
+      Earth-Like_planet_46: -1910048601
+      Earth-Like_planet_12: -216914122
+      Earth-Like_planet_22: 628200710
+      Earth-Like_planet_60: 545385153
+      Earth-Like_planet_66: 17737960
+      Earth-Like_planet_32: 744991191
+      Earth-Like_planet_36: -1688852212
+      Earth-Like_planet_53: 1388659127
+      Earth-Like_planet_4: -1351530556
+      Earth-Like_planet_15: 573056785
+      Earth-Like_planet_28: -716571687
+      Earth-Like_planet_39: 709382009
+      Earth-Like_planet_37: -1250379886
+      Earth-Like_planet_10: -1291352452
+      Earth-Like_planet_27: 1317713168
+      Earth-Like_planet_14: 1484429757
+      Earth-Like_planet_5: 1497576019
+      Earth-Like_planet_23: -721696686
+      Earth-Like_planet_34: -430960333
+      Earth-Like_planet_16: 1687049480
+      Earth-Like_planet_57: -1520917054
+      Earth-Like_planet_73: -7504245
+      Earth-Like_planet_47: -1072470256
+      Earth-Like_planet_41: 945151515
+      Earth-Like_planet_48: -543208179
+      Earth-Like_planet_7: 528292366
+      Earth-Like_planet_43: -664125248
+      Earth-Like_planet_68: 918263420
+      Earth-Like_planet_56: -243186886
+      Earth-Like_planet_75: -738322309
+      Earth-Like_planet_70: -569000116
+      Earth-Like_planet_71: -61749012
+      Earth-Like_planet_50: 1477201633
+      Earth-Like_planet_63: -447037213
+      Earth-Like_planet_0: 947756167
+      Earth-Like_planet_42: 1260214604
+      Earth-Like_planet_69: 1737662193
+      Earth-Like_planet_29: 1295662954
+      Earth-Like_planet_9: 1142540680
+      Earth-Like_planet_59: 1470843185
+      Earth-Like_planet_35: 615883094
+      Earth-Like_planet_44: -1234262153
+      Earth-Like_planet_58: 1842179261
+      Earth-Like_planet_3: 1750691836
+      Earth-Like_planet_17: 442401768
+      Earth-Like_planet_20: 2143716455
+      Earth-Like_planet_30: 2134539311
+      Earth-Like_planet_51: -2025125152
+      Earth-Like_planet_52: -1668283177
+      Earth-Like_planet_19: 213411868
+      Earth-Like_planet_76: -1099708695
+      Earth-Like_planet_1: -1072981151
+      Earth-Like_planet_65: 671894487
+      Earth-Like_planet_64: 1769321901
+      Earth-Like_planet_38: -1217385380
+      Earth-Like_planet_54: -1610494761
+      Earth-Like_planet_49: 1537190314
+      Earth-Like_planet_24: 1253247886
+      Earth-Like_planet_74: 129266377
+      Earth-Like_planet_18: -1530171905
+      Earth-Like_planet_72: 1385558358
+      Earth-Like_planet_31: 1268013040
+      Earth-Like_planet_13: 203473173
+      Earth-Like_planet_67: -215798253
+      Earth-Like_planet_45: 1292588108
+      Earth-Like_planet_8: -339678566
+      Earth-Like_planet_11: -2047269288
+      Earth-Like_planet_25: 1569550830
+      Earth-Like_planet_61: 1064285318
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
