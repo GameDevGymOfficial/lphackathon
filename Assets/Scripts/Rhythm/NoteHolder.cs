@@ -15,4 +15,9 @@ public class NoteHolder : MonoBehaviour
             transform.position -= new Vector3(0, Tempo * Time.deltaTime, 0f);
         }
     }
+    [ContextMenu("Move")]
+    void Move()
+    {
+        transform.position = new Vector3(transform.position.x, (Tempo/60) * 15.28f, 0f);
+    }
 }
