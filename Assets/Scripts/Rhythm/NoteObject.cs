@@ -3,9 +3,10 @@ using System;
 public class NoteObject : MonoBehaviour
 {
     [SerializeField] private KeyCode rowKeyCode;
-    [SerializeField]private bool canBePressed;
 
     [SerializeField] private ScoreScript score;
+
+    private bool canBePressed;
     private float buttonPosition;
     private float notePosition;
 
@@ -47,6 +48,7 @@ public class NoteObject : MonoBehaviour
         if (Math.Abs(judgment) > ((int)TypesOfHits.Hits.Ok / 100f))
         {
             Debug.Log("Bad");
+            AkSoundEngine.PostEvent("Hit_Event", gameObject);
             Destroy(gameObject);
             score.AddScore(TypesOfHits.Hits.Bad);
             return;
@@ -54,6 +56,7 @@ public class NoteObject : MonoBehaviour
         if (Math.Abs(judgment) > ((int)TypesOfHits.Hits.Great / 100f))
         {
             Debug.Log("Ok");
+            AkSoundEngine.PostEvent("Hit_Event", gameObject);
             Destroy(gameObject);
             score.AddScore(TypesOfHits.Hits.Ok);
             return;
@@ -61,11 +64,13 @@ public class NoteObject : MonoBehaviour
         if (Math.Abs(judgment) > ((int)TypesOfHits.Hits.Perfect / 100f))
         {
             Debug.Log("Great");
+            AkSoundEngine.PostEvent("Hit_Event", gameObject);
             Destroy(gameObject);
             score.AddScore(TypesOfHits.Hits.Great);
             return;
         }
         Debug.Log("Perfect");
+        AkSoundEngine.PostEvent("Hit_Event", gameObject);
         Destroy(gameObject);
         score.AddScore(TypesOfHits.Hits.Perfect);
     }

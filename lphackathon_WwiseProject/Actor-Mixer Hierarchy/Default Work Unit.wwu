@@ -3,7 +3,16 @@
 	<AudioObjects>
 		<WorkUnit Name="Default Work Unit" ID="{16C1F349-5515-4037-AAEB-E96D09A5C22C}" PersistMode="Standalone">
 			<ChildrenList>
-				<Sound Name="GoatScream_com" ID="{67CBC2AC-9260-4946-B1C2-640F41505A95}" ShortID="976751935">
+				<RandomSequenceContainer Name="New Random Container" ID="{441B88C0-F5CA-404C-AA8F-BC3EB6F32DB6}" ShortID="889272342">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{A4269165-15BD-4CA6-B0D5-2BFE96A149DF}"/>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A7D8F147-CAE1-43DC-A3DB-060A31B45D4A}"/>
@@ -13,18 +22,228 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<AudioFileSource Name="GoatScream_com" ID="{BCEC7147-1C95-46EB-8694-946F07332213}">
-							<Language>SFX</Language>
-							<AudioFile>GoatScream.com.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="486226277"/>
-							</MediaIDList>
-						</AudioFileSource>
+						<Sound Name="Hit_Hurt4" ID="{B156843C-A8E3-458B-ADEB-77619969525A}" ShortID="768323936">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-15</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{B51B49ED-F51B-4DBF-84B7-C35E521535AD}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A7D8F147-CAE1-43DC-A3DB-060A31B45D4A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8F90D724-7D71-48B6-A8E1-F21EB87344FC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Hit_Hurt4" ID="{47F0DE3F-4F0C-41C5-922D-894B42F5472A}">
+									<Language>SFX</Language>
+									<AudioFile>Hit_Hurt4.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="388262762"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Hit_Hurt4" ID="{47F0DE3F-4F0C-41C5-922D-894B42F5472A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Hit_Hurt" ID="{E4BE8525-2B7D-4B0A-A3B3-FE9074F15B41}" ShortID="710432476">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-15</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{9549F611-D31A-42AC-8168-E7310926F616}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A7D8F147-CAE1-43DC-A3DB-060A31B45D4A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8F90D724-7D71-48B6-A8E1-F21EB87344FC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Hit_Hurt" ID="{281959A8-79A9-41F6-AFEE-54F98F280FA8}">
+									<Language>SFX</Language>
+									<AudioFile>Hit_Hurt.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="870883531"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Hit_Hurt" ID="{281959A8-79A9-41F6-AFEE-54F98F280FA8}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Hit_Hurt6" ID="{ECEFBBF0-189C-4516-81DF-AB7D6D0C5C65}" ShortID="268346564">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-15</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{859CE2E0-76A4-4ADC-BD45-B5B1044F4706}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A7D8F147-CAE1-43DC-A3DB-060A31B45D4A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8F90D724-7D71-48B6-A8E1-F21EB87344FC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Hit_Hurt6" ID="{269A4A32-D1B4-47FB-A595-9B7BC799980C}">
+									<Language>SFX</Language>
+									<AudioFile>Hit_Hurt6.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1066614353"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Hit_Hurt6" ID="{269A4A32-D1B4-47FB-A595-9B7BC799980C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Hit_Hurt10" ID="{6E5C9059-023A-4413-8DAF-A826B1C5FF67}" ShortID="9579133">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-15</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{03B1A5F3-3A1A-4F23-ABF1-64E59C9E0FC0}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A7D8F147-CAE1-43DC-A3DB-060A31B45D4A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8F90D724-7D71-48B6-A8E1-F21EB87344FC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Hit_Hurt10" ID="{6DE5B49D-675B-49EE-9A2D-46E9D7A8406C}">
+									<Language>SFX</Language>
+									<AudioFile>Hit_Hurt10.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="183127534"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Hit_Hurt10" ID="{6DE5B49D-675B-49EE-9A2D-46E9D7A8406C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="GoatScream_com" ID="{BCEC7147-1C95-46EB-8694-946F07332213}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="New Random Container_01" ID="{ABC5D258-8A02-4B7B-8F84-5C03BEE32B53}" ShortID="1061761472">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{30B99EBF-5C6C-41FD-B9ED-EC4615FD05A4}"/>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A7D8F147-CAE1-43DC-A3DB-060A31B45D4A}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8F90D724-7D71-48B6-A8E1-F21EB87344FC}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Explosion10" ID="{B91E953C-031A-46F6-8C74-02D0E8E2C973}" ShortID="1002979753">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-15</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A7D8F147-CAE1-43DC-A3DB-060A31B45D4A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8F90D724-7D71-48B6-A8E1-F21EB87344FC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Explosion10" ID="{F4FCD836-24EF-43FA-8CDC-54380F5F5E7C}">
+									<Language>SFX</Language>
+									<AudioFile>Explosion10.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="846654128"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Explosion10" ID="{F4FCD836-24EF-43FA-8CDC-54380F5F5E7C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Explosion" ID="{DCE529B2-9005-46AE-AB34-CA0879BB13E1}" ShortID="402100329">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-15</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{0A961604-B12C-4C88-AF9C-A6347EC6615E}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A7D8F147-CAE1-43DC-A3DB-060A31B45D4A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8F90D724-7D71-48B6-A8E1-F21EB87344FC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Explosion" ID="{0E0B030E-87E4-42E2-9E4A-11460FAEC921}">
+									<Language>SFX</Language>
+									<AudioFile>Explosion.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="226741675"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Explosion" ID="{0E0B030E-87E4-42E2-9E4A-11460FAEC921}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
