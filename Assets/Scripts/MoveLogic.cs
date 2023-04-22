@@ -39,14 +39,15 @@ public class MoveLogic : MonoBehaviour
             index++;
             if (Input.GetKey(moveKey))
             {
-                transform.position = Vector3.SmoothDamp(transform.position, new Vector3(movePoints[index - 1].transform.position.x, transform.position.y, 0), ref velocity, 0.1f);
-                rocketLauncher.LaunchForward();
+                transform.position = Vector3.SmoothDamp(transform.position, new Vector3(movePoints[index - 1].transform.position.x, transform.position.y, 0), ref velocity, 0.05f);
+                rocketLauncher.LaunchForward(index-1);
+                Debug.Log(index);
                 pressed = true;
             }
         }
         if (!pressed)
         {
-            transform.position = Vector3.SmoothDamp(transform.position, new Vector3(defaultPosition.transform.position.x, transform.position.y, 0), ref velocity, 0.1f);
+            transform.position = Vector3.SmoothDamp(transform.position, new Vector3(defaultPosition.transform.position.x, transform.position.y, 0), ref velocity, 0.05f);
         }
     }
 }
