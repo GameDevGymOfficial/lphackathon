@@ -3,8 +3,9 @@ using System;
 public class NoteObject : MonoBehaviour
 {
     [SerializeField] private KeyCode rowKeyCode;
-
     [SerializeField]private bool canBePressed;
+
+    [SerializeField] private ScoreScript score;
     private float buttonPosition;
     private float notePosition;
 
@@ -40,31 +41,32 @@ public class NoteObject : MonoBehaviour
         if (Math.Abs(judgment) > ((int)TypesOfHits.Hits.Bad / 100f))
         {
             Debug.Log("Miss");
+            score.AddScore(TypesOfHits.Hits.Miss);
             return;
         }
         if (Math.Abs(judgment) > ((int)TypesOfHits.Hits.Ok / 100f))
         {
             Debug.Log("Bad");
             Destroy(gameObject);
-            //Score(Bad)
+            score.AddScore(TypesOfHits.Hits.Bad);
             return;
         }
         if (Math.Abs(judgment) > ((int)TypesOfHits.Hits.Great / 100f))
         {
             Debug.Log("Ok");
             Destroy(gameObject);
-            //Score(Ok)
+            score.AddScore(TypesOfHits.Hits.Ok);
             return;
         }
         if (Math.Abs(judgment) > ((int)TypesOfHits.Hits.Perfect / 100f))
         {
             Debug.Log("Great");
             Destroy(gameObject);
-            //Score(Great)
+            score.AddScore(TypesOfHits.Hits.Great);
             return;
         }
         Debug.Log("Perfect");
         Destroy(gameObject);
-        //Score(Perfect)
+        score.AddScore(TypesOfHits.Hits.Perfect);
     }
 }

@@ -1,76 +1,68 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class ScoreScript : MonoBehaviour
 {
-    TypesOfHits.Hits hits;
-    public bool gameOver = false;
-    public bool SuccsesHit = false;
-    public const string ScoreText = "Score: ";
-    public int Score = 0;
-
-
-
     [SerializeField] TextMeshProUGUI Text;
 
-    // Start is called before the first frame update
+    private int Score = 0;
+    private int health = 6;
+    private const float NOTE_VALUE= 100;
+    private float coefficient;
+    private int combo=0;
+
+    public int[] hitCount = new int[5];
+    private const string SCORE_TEXT = "Score: ";
+
     void Start()
     {
-        Text.text = ScoreText + Score;
-        //int HitsInScore = GetScore(TypesOfHits.Hits.Perfect); 
-        //Text.text = ScoreText + HitsInScore;
+        Text.text = SCORE_TEXT + Score;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void AddScore(TypesOfHits.Hits hits)
     {
-        if (Input.GetMouseButtonDown(0))
+        switch (hits)
         {
-            SuccsesHit = true;
-            SuccsesHits();
+            case TypesOfHits.Hits.Perfect:
+                coefficient = 1;
+                hitCount[0]++;
+                combo++;
+                break;
+            case TypesOfHits.Hits.Great:
+                coefficient = 0.8f;
+                hitCount[1]++;
+                combo++;
+                break;
+            case TypesOfHits.Hits.Ok:
+                coefficient = 0.6f;
+                hitCount[2]++;
+                combo++;
+                break;
+            case TypesOfHits.Hits.Bad:
+                coefficient = 0.4f;
+                hitCount[3]++;
+                combo=0;
+                break;
+            case TypesOfHits.Hits.Miss:
+                coefficient = 0f;
+                hitCount[4]++;
+                combo = 0;
+                ChangeHealth(-1);
+                break;
         }
-        if (Input.GetMouseButtonDown(1))
+        Score += (int)(NOTE_VALUE * coefficient);
+        Text.text = SCORE_TEXT + Score;
+        if(combo%10==0)
         {
-            gameOver = true;
-            GameOver();
+            ChangeHealth(1);
+        }
+        if(health==0)
+        {
+            Debug.Log("Game Over");
         }
     }
-    static int GetScore(TypesOfHits.Hits _hits)
+    public void ChangeHealth(int change)
     {
-        int HitScore = (int)_hits; // Score of Enum(TypesOfHits)
-
-        return HitScore;
-    } 
-    
-    public void GameOver ()
-    {
-        if (gameOver == true)
-        {
-            Score = 0;
-            Text.text = ScoreText + Score;
-            gameOver = false;
-        }
-    }
-    public void SuccsesHits()
-    {
-        if (SuccsesHit == true)
-        {
-            _AddScore();
-            SuccsesHit = false;
-        }
-    }
-    public void _AddScore()
-    {
-        int NewScore = GetScore(TypesOfHits.Hits.Perfect);///
-        Score = AddScore(Score, NewScore);
-        Text.text = ScoreText + Score;
-    }
-    public int AddScore(int OldScore, int AddValue)
-    {
-        int res = OldScore + AddValue;
-        return res;
+        health += change;
     }
 }
