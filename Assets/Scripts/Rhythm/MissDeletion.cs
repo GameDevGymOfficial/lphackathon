@@ -10,6 +10,6 @@ public class MissDeletion : MonoBehaviour
             Debug.Log("Absolute miss");
             AkSoundEngine.PostEvent("Miss_Event",gameObject);
             //Minus HP and combo
-;        }
+;       }
     }
 }

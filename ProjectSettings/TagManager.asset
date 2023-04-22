@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Button
   - Note
+  - Rocket
+  - Asteroid
   layers:
   - Default
   - TransparentFX

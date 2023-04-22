@@ -20,6 +20,7 @@ public class NoteObject : MonoBehaviour
             }
         }
     }
+    
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.CompareTag("Button"))
@@ -35,6 +36,7 @@ public class NoteObject : MonoBehaviour
             canBePressed = false;
         }
     }
+    
     private void HitLogic()
     {
         notePosition = gameObject.transform.position.y;
