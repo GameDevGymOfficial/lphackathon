@@ -5,54 +5,41 @@ public class RocketLauncher : MonoBehaviour
 {
     [SerializeField] private Transform launchTarget;
     [SerializeField] private GameObject rocketPrefab;
-
-    [SerializeField] private Transform launchPointsParent;
-    private List<Transform> launchPoints = new List<Transform>();
+    [SerializeField] private Transform[] launchPoints;
 
     private void Awake()
     {
-        foreach(Transform ch in launchPointsParent)
-        {
-            launchPoints.Add(ch);
-        }
+        launchPoints = new Transform[4];
     }
 
     [ContextMenu("Launch")]
     public void Launch()
     {
-        LaunchForward();
+        LaunchForward(1);
     }
     [ContextMenu("LaunchToTarget")]
     public void LaunchToTarget()
     {
-        LaunchTo(launchTarget);
+        LaunchTo(launchTarget,1);
     }
 
-    public void LaunchTo(Transform target)
+    public void LaunchTo(Transform target,int index)
     {
-        var rocket = SpawnRocket();
+        var rocket = SpawnRocket(launchPoints[index]);
 
         rocket.SetTargetMovement(target);
     }
-    public void LaunchForward()
+    public void LaunchForward(int index)
     {
-        var rocket = SpawnRocket();
+        var rocket = SpawnRocket(launchPoints[index]);
 
         rocket.SetForwardMovement();
     }
 
-    private Rocket SpawnRocket()
+    private Rocket SpawnRocket(Transform Pos)
     {
-        Transform spawnPoint = GetRandomLaunchPoint();
 
-        var rocketGO = Instantiate(rocketPrefab, spawnPoint.position, spawnPoint.rotation);
+        var rocketGO = Instantiate(rocketPrefab, Pos.position, Pos.rotation);
         return rocketGO.GetComponent<Rocket>();
-    }
-
-    private Transform GetRandomLaunchPoint()
-    {
-        int randomSpawnPointIndex = Random.Range(0, launchPoints.Count);
-
-        return launchPoints[randomSpawnPointIndex];
     }
 }

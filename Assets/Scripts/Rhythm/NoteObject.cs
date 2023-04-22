@@ -9,7 +9,7 @@ public class NoteObject : MonoBehaviour
     private float buttonPosition;
     private float notePosition;
 
-    private void Start()
+    private void Awake()
     {
         rowKeyCode = GetComponentInParent<RowHolder>().RowCode;
 
