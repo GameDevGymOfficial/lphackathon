@@ -16,7 +16,7 @@ public class NoteObject : MonoBehaviour
     {
         if (Input.GetKeyDown(rowKeyCode))
         {
-            if(canBePressed)
+            if (canBePressed)
             {
                 HitLogic();
             }
@@ -45,13 +45,13 @@ public class NoteObject : MonoBehaviour
         float judgment = notePosition - buttonPosition;
         if (Math.Abs(judgment) > ((int)TypesOfHits.Hits.Bad / 100f))
         {
-            Debug.Log("Miss");
+            //Debug.Log("Miss");
             score.AddScore(TypesOfHits.Hits.Miss);
             return;
         }
         if (Math.Abs(judgment) > ((int)TypesOfHits.Hits.Ok / 100f))
         {
-            Debug.Log("Bad");
+            //Debug.Log("Bad");
             AkSoundEngine.PostEvent("Hit_Event", gameObject);
             Destroy(gameObject);
             score.AddScore(TypesOfHits.Hits.Bad);
@@ -59,7 +59,7 @@ public class NoteObject : MonoBehaviour
         }
         if (Math.Abs(judgment) > ((int)TypesOfHits.Hits.Great / 100f))
         {
-            Debug.Log("Ok");
+            //Debug.Log("Ok");
             AkSoundEngine.PostEvent("Hit_Event", gameObject);
             Destroy(gameObject);
             score.AddScore(TypesOfHits.Hits.Ok);
@@ -67,13 +67,12 @@ public class NoteObject : MonoBehaviour
         }
         if (Math.Abs(judgment) > ((int)TypesOfHits.Hits.Perfect / 100f))
         {
-            Debug.Log("Great");
+            //Debug.Log("Great");
             AkSoundEngine.PostEvent("Hit_Event", gameObject);
             Destroy(gameObject);
             score.AddScore(TypesOfHits.Hits.Great);
             return;
         }
-        Debug.Log("Perfect");
         AkSoundEngine.PostEvent("Hit_Event", gameObject);
         Destroy(gameObject);
         score.AddScore(TypesOfHits.Hits.Perfect);
