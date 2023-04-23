@@ -1,6 +1,6 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
 
 public class SettingsManager : MonoBehaviour
 {
@@ -26,7 +26,7 @@ public class SettingsManager : MonoBehaviour
     private void Awake()
     {
         menuManager = FindObjectOfType<MenuManager>();
-        
+
         masterVolumeSlider.onValueChanged.AddListener(SetMasterVolume);
         musicVolumeSlider.onValueChanged.AddListener(SetMusicVolume);
         sfxVolumeSlider.onValueChanged.AddListener(SetSFXVolume);
@@ -91,16 +91,19 @@ public class SettingsManager : MonoBehaviour
     {
         menuManager.DisableOverlay();
         IsBinding = false;
-        if((keys[0]==KeyCode.Alpha1 || keys[0] == KeyCode.Keypad1) && (keys[1] == KeyCode.Alpha9 || keys[1] == KeyCode.Keypad9) && (keys[2] == KeyCode.Alpha8 || keys[2] == KeyCode.Keypad8) && (keys[3] == KeyCode.Alpha5 || keys[3] == KeyCode.Keypad5))
+        if ((keys[0] == KeyCode.Alpha1 || keys[0] == KeyCode.Keypad1) &&
+            (keys[1] == KeyCode.Alpha9 || keys[1] == KeyCode.Keypad9) && 
+            (keys[2] == KeyCode.Alpha8 || keys[2] == KeyCode.Keypad8) && 
+            (keys[3] == KeyCode.Alpha5 || keys[3] == KeyCode.Keypad5))
         {
             Debug.Log("Secret");
             GetComponent<Animator>().Play("Dlorian");
             SecretEvent?.Post(gameObject);
         }
-        Debug.Log("0:"+keys[0]);
-        Debug.Log("1:"+keys[1]);
-        Debug.Log("2:"+keys[2]);
-        Debug.Log("3:"+keys[3]);
+        Debug.Log("0:" + keys[0]);
+        Debug.Log("1:" + keys[1]);
+        Debug.Log("2:" + keys[2]);
+        Debug.Log("3:" + keys[3]);
     }
     public void BindKey(KeyCode key, int keyIndex)
     {

@@ -21,6 +21,7 @@ namespace AK
         static const AkUniqueID MISS_EVENT = 1131770108U;
         static const AkUniqueID PAUSE = 3092587493U;
         static const AkUniqueID RESUME = 953277036U;
+        static const AkUniqueID SECRET = 3354192397U;
         static const AkUniqueID STOPALL = 3086540886U;
     } // namespace EVENTS
 
