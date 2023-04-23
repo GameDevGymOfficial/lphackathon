@@ -15,6 +15,7 @@
 * [NuGet packages](https://learn.microsoft.com/uk-ua/nuget/) - type of software package used in the Microsoft .NET ecosystem, containing compiled code and other resources, and are used by developers to easily add functionality to their projects and share code between teams.
 * [Unity](https://unity.com/) - multi-platform tool for developing video games and applications, and the engine on which they run.
 * [Wwise](https://www.audiokinetic.com/en/products/wwise) - Audiokinetic's software for interactive media and video games, available for free to non-commercial users and under license for commercial video game developers. It features an audio authoring tool and a cross-platform sound engine.
+* [Adobe Photoshop](https://www.adobe.com/ua/products/photoshop.html) - Combine, retouch and compose images. Color old black and white photos. Remove unwanted objects from the photo. Or turn an uninteresting background into an exotic paradise. Everyone can do it with Photoshop.
 ## 🔌 How to run project
 ### For Users:
 Download `AstroRhythm` and start `.exe` file
