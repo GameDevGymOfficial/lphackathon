@@ -21,13 +21,10 @@
 						</Event>
 						<Event Name="Lvl_one" ID="{FA35B551-C4AA-4517-89E2-73AA09F9D451}">
 							<ChildrenList>
-								<Action Name="" ID="{B0499045-19EF-498F-AEEF-DE35B58C69FB}" ShortID="1047895479">
-									<PropertyList>
-										<Property Name="Delay" Type="Real64" Value="1"/>
-									</PropertyList>
+								<Action Name="" ID="{4E620A92-A27C-4EBF-879A-8170992BB80C}" ShortID="37072504">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Cold_Space" ID="{CA577D54-F7D9-44C8-8811-4E79271C830E}" WorkUnitID="{CCDFFEEE-BBB8-4A74-9EF4-3EE08B83B71E}"/>
+											<ObjectRef Name="A_New_Planet" ID="{FF0547C9-6D17-42C3-84C5-E2D1C2B4DB36}" WorkUnitID="{CCDFFEEE-BBB8-4A74-9EF4-3EE08B83B71E}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

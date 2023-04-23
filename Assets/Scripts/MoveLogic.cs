@@ -68,7 +68,7 @@ public class MoveLogic : MonoBehaviour
     {
         if (Input.GetKeyDown(key))
         {
-            //rocketLauncher.LaunchForward(i);
+            rocketLauncher.LaunchForward(i);
         }
     }
 

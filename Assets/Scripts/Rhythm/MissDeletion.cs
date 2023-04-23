@@ -15,6 +15,7 @@ public class MissDeletion : MonoBehaviour
     {
         if(collision.CompareTag("Note"))
         {
+            collision.GetComponent<NoteObject>().OnMissDeletion();
             Destroy(collision.gameObject);
             AkSoundEngine.PostEvent("Miss_Event", gameObject);
 ;       }

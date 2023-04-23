@@ -54,20 +54,12 @@ public class NoteObject : MonoBehaviour
             }
         }
     }
-    private void OnTriggerExit2D(Collider2D collision)
+    public void OnMissDeletion()
     {
-        if (collision.CompareTag("Button"))
-        {
-            canBePressed = false;
-
-            if (!wasPressed)
-            {
                 Miss();
                 Debug.Log("Absolute miss");
                 FindObjectOfType<HP>().ChangeHealth(-1);
-                score.ResetCombo();
-            }
-        }
+
     }
 
     private void TryHit()
