@@ -18,9 +18,9 @@ public class RocketLauncher : MonoBehaviour
         rocket.SetForwardMovement();
     }
 
-    private Rocket SpawnRocket(Transform Pos)
+    private Rocket SpawnRocket(Transform spawnPoint)
     {
-        var rocketGO = Instantiate(rocketPrefab, Pos.position, Pos.rotation);
+        var rocketGO = Instantiate(rocketPrefab, spawnPoint.position, spawnPoint.rotation);
         return rocketGO.GetComponent<Rocket>();
     }
 }

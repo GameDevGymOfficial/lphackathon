@@ -3,6 +3,9 @@ using UnityEngine;
 
 public class NoteObject : MonoBehaviour
 {
+    public Action OnMiss;
+    public Action OnHit;
+
     private GameManager gameManager;
     private ScoreHPScript score;
 
@@ -59,6 +62,7 @@ public class NoteObject : MonoBehaviour
 
             if (!wasPressed)
             {
+                Miss();
                 Debug.Log("Absolute miss");
                 FindObjectOfType<HP>().ChangeHealth(-1);
                 score.ResetCombo();
@@ -71,31 +75,38 @@ public class NoteObject : MonoBehaviour
         float notePositionY = gameObject.transform.position.y;
         float judgment = Math.Abs(notePositionY - buttonPositionY) * 100;
         
-        if (judgment < (int)TypesOfHits.Hits.Perfect)
+        if (judgment < (int)HitType.Perfect)
         {
-            Hit(TypesOfHits.Hits.Perfect);
+            Hit(HitType.Perfect);
         }
-        else if (judgment < (int)TypesOfHits.Hits.Great)
+        else if (judgment < (int)HitType.Great)
         {
-            Hit(TypesOfHits.Hits.Great);
+            Hit(HitType.Great);
         }
-        else if (judgment < (int)TypesOfHits.Hits.Ok)
+        else if (judgment < (int)HitType.Ok)
         {
-            Hit(TypesOfHits.Hits.Ok);
+            Hit(HitType.Ok);
         }
-        else if (judgment < (int)TypesOfHits.Hits.Bad)
+        else if (judgment < (int)HitType.Bad)
         {
-            Hit(TypesOfHits.Hits.Bad);
+            Hit(HitType.Bad);
         }
         else
         {
-            score.AddScore(TypesOfHits.Hits.Miss);
+            score.AddScore(HitType.Miss);
+            Miss();
         }
         wasPressed = true;
     }
 
-    private void Hit(TypesOfHits.Hits hitType)
+    private void Miss()
     {
+        OnMiss?.Invoke();
+    }
+
+    private void Hit(HitType hitType)
+    {
+        OnHit?.Invoke();
         //Debug.Log(hitType.ToString());
         AkSoundEngine.PostEvent("Hit_Event", gameObject);
         score.AddScore(hitType);

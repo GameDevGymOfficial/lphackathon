@@ -30,31 +30,31 @@ public class ScoreHPScript : MonoBehaviour
             item.text = score.ToString();
         }
     }
-    public void AddScore(TypesOfHits.Hits hits)
+    public void AddScore(HitType hits)
     {
         switch (hits)
         {
-            case TypesOfHits.Hits.Perfect:
+            case HitType.Perfect:
                 coefficient = 1;
                 hitCount[0]++;
                 UpdateCombo();
                 break;
-            case TypesOfHits.Hits.Great:
+            case HitType.Great:
                 coefficient = 0.8f;
                 hitCount[1]++;
                 UpdateCombo();
                 break;
-            case TypesOfHits.Hits.Ok:
+            case HitType.Ok:
                 coefficient = 0.6f;
                 hitCount[2]++;
                 UpdateCombo();
                 break;
-            case TypesOfHits.Hits.Bad:
+            case HitType.Bad:
                 coefficient = 0.4f;
                 hitCount[3]++;
                 ResetCombo();
                 break;
-            case TypesOfHits.Hits.Miss:
+            case HitType.Miss:
                 coefficient = 0f;
                 hitCount[4]++;
                 ResetCombo();
