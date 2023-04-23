@@ -1580,11 +1580,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: -23.77002
       objectReference: {fileID: 0}
-    - target: {fileID: 5575551715655898700, guid: d89865739c113ea4a964bdb3f84e8f89,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5867855332116333456, guid: d89865739c113ea4a964bdb3f84e8f89,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -1685,21 +1680,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7324970738695032699, guid: d89865739c113ea4a964bdb3f84e8f89,
-        type: 3}
-      propertyPath: Text.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7324970738695032699, guid: d89865739c113ea4a964bdb3f84e8f89,
-        type: 3}
-      propertyPath: Text.Array.data[0]
-      value: 
-      objectReference: {fileID: 1202819599}
-    - target: {fileID: 7324970738695032699, guid: d89865739c113ea4a964bdb3f84e8f89,
-        type: 3}
-      propertyPath: Text.Array.data[1]
-      value: 
-      objectReference: {fileID: 1662525978}
     - target: {fileID: 7324970739299112819, guid: d89865739c113ea4a964bdb3f84e8f89,
         type: 3}
       propertyPath: m_Name
@@ -2030,18 +2010,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6ec06d3c100201843829b9fae0c2b92a, type: 3}
---- !u!114 &1202819599 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3614938524999463133, guid: d89865739c113ea4a964bdb3f84e8f89,
-    type: 3}
-  m_PrefabInstance: {fileID: 1088713060}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1205133957
 GameObject:
   m_ObjectHideFlags: 0
@@ -2504,18 +2472,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6ec06d3c100201843829b9fae0c2b92a, type: 3}
---- !u!114 &1662525978 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6474040993851442096, guid: d89865739c113ea4a964bdb3f84e8f89,
-    type: 3}
-  m_PrefabInstance: {fileID: 1088713060}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1684758798
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3278,7 +3234,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 184be4b7c4265844a972ad159c454514, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

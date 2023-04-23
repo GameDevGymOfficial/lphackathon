@@ -20,6 +20,10 @@ public class ScoreHPScript : MonoBehaviour
         hp = FindObjectOfType<HP>();
         gameManager = FindObjectOfType<GameManager>();
     }
+    private void Start()
+    {
+        AddScore(0);
+    }
 
     private void AddScore(int delta)
     {
