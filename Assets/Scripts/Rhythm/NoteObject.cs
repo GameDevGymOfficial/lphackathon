@@ -106,6 +106,7 @@ public class NoteObject : MonoBehaviour
     }
     public void HitDestroy()
     {
+        transform.SetParent(null);
         OnDestroyHit?.Invoke();
         AkSoundEngine.PostEvent("Hit_Event", gameObject);
         gameObject.SetActive(false);

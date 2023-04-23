@@ -29,7 +29,7 @@
 				<GameParameter Id="2918011349" Name="MasterVolume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="2228651116" Type="User" Language="SFX" Hash="{A24541D8-1171-5459-F1DB-62B6FE3D5B64}">
+		<SoundBank Id="2228651116" Type="User" Language="SFX" Hash="{EA919F27-D2C8-562D-D756-310B2CFB57A8}">
 			<ShortName>Main_SoundBank</ShortName>
 			<Path>Main_SoundBank.bnk</Path>
 			<Media>
@@ -88,7 +88,7 @@
 						<MediaRef Id="514013620"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="4055567060" Name="Menu_music" DurationType="OneShot" DurationMin="38.090893" DurationMax="38.090893">
+				<Event Id="4055567060" Name="Menu_music" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="514013620"/>
 					</MediaRefs>
@@ -107,5 +107,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{2FF37702-576B-F3A5-B481-932C400B6A8F}</FileHash>
+	<FileHash>{15E3754D-1AB7-7E74-B5FB-445FB76EFE8B}</FileHash>
 </SoundBanksInfo>

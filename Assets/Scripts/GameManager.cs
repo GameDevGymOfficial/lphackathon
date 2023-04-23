@@ -22,7 +22,7 @@ public class GameManager : MonoBehaviour
         if (Input.anyKeyDown & !started)
         {
             started = true;
-            MusicEvent.Post(gameObject);
+            MusicEvent?.Post(gameObject);
         }
     }
 
