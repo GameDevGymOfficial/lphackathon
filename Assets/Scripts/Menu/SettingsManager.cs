@@ -18,6 +18,7 @@ public class SettingsManager : MonoBehaviour
     public static KeyCode Key3 => keys[2];
     public static KeyCode Key4 => keys[3];
 
+    [SerializeField] private AK.Wwise.Event SecretEvent;
     [SerializeField] private Slider masterVolumeSlider;
     [SerializeField] private Slider musicVolumeSlider;
     [SerializeField] private Slider sfxVolumeSlider;
@@ -90,6 +91,15 @@ public class SettingsManager : MonoBehaviour
     {
         menuManager.DisableOverlay();
         IsBinding = false;
+        if((keys[0]==KeyCode.Alpha1 || keys[0] == KeyCode.Keypad1) && (keys[1] == KeyCode.Alpha9 || keys[1] == KeyCode.Keypad9) && (keys[2] == KeyCode.Alpha8 || keys[2] == KeyCode.Keypad8) && (keys[3] == KeyCode.Alpha5 || keys[3] == KeyCode.Keypad5))
+        {
+            Debug.Log("Secret");
+            SecretEvent?.Post(gameObject);
+        }
+        Debug.Log("0:"+keys[0]);
+        Debug.Log("1:"+keys[1]);
+        Debug.Log("2:"+keys[2]);
+        Debug.Log("3:"+keys[3]);
     }
     public void BindKey(KeyCode key, int keyIndex)
     {

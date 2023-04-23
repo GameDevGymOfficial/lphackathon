@@ -29,10 +29,14 @@
 				<GameParameter Id="2918011349" Name="MasterVolume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="2228651116" Type="User" Language="SFX" Hash="{EA919F27-D2C8-562D-D756-310B2CFB57A8}">
+		<SoundBank Id="2228651116" Type="User" Language="SFX" Hash="{09417738-75BB-4904-BC78-1ECB814185B2}">
 			<ShortName>Main_SoundBank</ShortName>
 			<Path>Main_SoundBank.bnk</Path>
 			<Media>
+				<File Id="87570505" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>back_to_the_future_03._Alan_Silvestri_-_Back_To_The_Future.wav</ShortName>
+					<CachePath>SFX/back_to_the_future_03._Alan_Silvestri_-_Back_To_The_Future_10C4C929.wem</CachePath>
+				</File>
 				<File Id="183127534" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Hit_Hurt10.wav</ShortName>
 					<CachePath>SFX/Hit_Hurt10_10C4C929.wem</CachePath>
@@ -88,7 +92,7 @@
 						<MediaRef Id="514013620"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="4055567060" Name="Menu_music" DurationType="Infinite">
+				<Event Id="4055567060" Name="Menu_music" DurationType="OneShot" DurationMin="38.090893" DurationMax="38.090893">
 					<MediaRefs>
 						<MediaRef Id="514013620"/>
 					</MediaRefs>
@@ -103,9 +107,14 @@
 				</Event>
 				<Event Id="3092587493" Name="Pause" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="953277036" Name="Resume" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3354192397" Name="Secret" DurationType="OneShot" DurationMin="6.76161" DurationMax="6.76161">
+					<MediaRefs>
+						<MediaRef Id="87570505"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="3086540886" Name="StopAll" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{15E3754D-1AB7-7E74-B5FB-445FB76EFE8B}</FileHash>
+	<FileHash>{1AA15D72-6B6C-8EFF-66A4-7AE94AAC74D4}</FileHash>
 </SoundBanksInfo>

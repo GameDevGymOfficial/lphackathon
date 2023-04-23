@@ -10,6 +10,7 @@
 						<ObjectRef Name="Menu_music" ID="{E056DA3F-9B64-43E3-B61A-C683AF4505B9}" WorkUnitID="{F125AB88-EE99-489F-B796-876314265743}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Lvl_3" ID="{A55D677C-1953-4400-B615-1271C2072C8C}" WorkUnitID="{F125AB88-EE99-489F-B796-876314265743}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Lvl_one" ID="{FA35B551-C4AA-4517-89E2-73AA09F9D451}" WorkUnitID="{F125AB88-EE99-489F-B796-876314265743}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Secret" ID="{192D858A-A49F-4609-A232-20BE754EC190}" WorkUnitID="{F125AB88-EE99-489F-B796-876314265743}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="StopAll" ID="{2E5CE7C4-7F3C-47AD-93F4-6215E09F83FE}" WorkUnitID="{F125AB88-EE99-489F-B796-876314265743}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Lvl_2" ID="{2EE522E2-A9CA-4B97-B05C-3F437B001F02}" WorkUnitID="{F125AB88-EE99-489F-B796-876314265743}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Miss_Event" ID="{49EE88AA-98BE-4D95-9748-317CB428A344}" WorkUnitID="{F125AB88-EE99-489F-B796-876314265743}" Origin="Manual" Filter="7"/>

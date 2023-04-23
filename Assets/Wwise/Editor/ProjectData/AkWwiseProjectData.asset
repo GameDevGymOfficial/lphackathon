@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: d795017ae16299468b18ab7e144a3993
     GuidInternal: 
-    m_lastTime: -8585193650509620629
+    m_lastTime: -8585194602136375913
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 24d7908f717db648a8e1f21eb87344fc
     GuidInternal: 
-    m_lastTime: -8585193650512615735
+    m_lastTime: -8585194393872894168
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -100,7 +100,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 0acfd8e08d80734cb4b1ae1139d67a15
     GuidInternal: 
-    m_lastTime: -8585193650509660519
+    m_lastTime: -8585193565889116095
     List:
     - name: Main_SoundBank
       guid: 341b0b8e7892034a9d197c013bb86b49
@@ -128,7 +128,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 88ab25f199ee9f48b796876314265743
     GuidInternal: 
-    m_lastTime: -8585193596982263883
+    m_lastTime: -8585193574023465630
     List:
     - name: Hit_Event
       guid: 8da3c971960d5543b2be1ff9c087dec6
@@ -301,6 +301,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Secret
+      guid: 8a852d199fa40946a23220be754ec190
+      id: 3354192397
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 88ab25f199ee9f48b796876314265743
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 691db549736cf4449b7e3e04131cd1a8
+      - ElementName: Secret
+        ObjectType: 3
+        guid: 8a852d199fa40946a23220be754ec190
+      Path: Events\Default Work Unit\SFX\Secret
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: SFX
       guid: 691db549736cf4449b7e3e04131cd1a8
       id: 393239870
@@ -367,7 +387,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 5caf8477f756d847987dd11674f2a039
     GuidInternal: 
-    m_lastTime: -8585193650516613199
+    m_lastTime: -8585194393872974205
     List:
     - name: MasterVolume
       guid: a53122a1900a694bb2cfe17a3511ecd8
@@ -446,7 +466,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 43ce5a3e7c525f4681f8177ab31ca203
     GuidInternal: 
-    m_lastTime: -8585193650509640575
+    m_lastTime: -8585194602136395914
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -460,7 +480,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 6d5e66c283d92e43af81276d4fcfcc5a
     GuidInternal: 
-    m_lastTime: -8585193650509640575
+    m_lastTime: -8585194602136385912
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -474,10 +494,10 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 32d755fa09de544db7a74a7172b68e44
     GuidInternal: 
-    m_lastTime: -8585193650509630602
+    m_lastTime: -8585194602136385912
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 020000000300000007000000080000000c0000000e0000000f00000011000000130000001500000016000000
+  ExpandedWaapiItemIds: 06000000070000000b000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

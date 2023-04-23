@@ -89,6 +89,30 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Secret" ID="{192D858A-A49F-4609-A232-20BE754EC190}">
+							<ChildrenList>
+								<Action Name="" ID="{0122B437-D21E-4FAF-81D3-E8A8F9A0E31F}" ShortID="786858458">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="8"/>
+									</PropertyList>
+									<ReferenceList/>
+								</Action>
+								<Action Name="" ID="{0ADECFD0-C9EE-42C4-A8FD-792A16FACE4A}" ShortID="813350644">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="back_to_the_future_03__Alan_Silvestri_-_Back_To_The_Future" ID="{DFDD62FE-DCE3-4366-A4ED-28B87C3AF99E}" WorkUnitID="{16C1F349-5515-4037-AAEB-E96D09A5C22C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{56B4F934-9025-40C3-B963-9F0FEBD90307}" ShortID="183924703">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="10"/>
+										<Property Name="Delay" Type="Real64" Value="9"/>
+									</PropertyList>
+									<ReferenceList/>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Event Name="StopAll" ID="{2E5CE7C4-7F3C-47AD-93F4-6215E09F83FE}">
