@@ -10,6 +10,7 @@ public class NoteObject : MonoBehaviour
 
     private KeyCode rowKeyCode;
 
+    private bool wasPressed;
     private bool canBePressed;
     private float buttonPositionY;
 
@@ -43,7 +44,7 @@ public class NoteObject : MonoBehaviour
         {
             canBePressed = true;
             buttonPositionY = collision.transform.position.y;
-            Debug.Log("Enter");
+
             if (isEnd)
             {
                 gameManager.Win();
@@ -56,9 +57,12 @@ public class NoteObject : MonoBehaviour
         {
             canBePressed = false;
 
-            Debug.Log("Absolute miss");
-            FindObjectOfType<HP>().ChangeHealth(-1);
-            score.ResetCombo();
+            if (!wasPressed)
+            {
+                Debug.Log("Absolute miss");
+                FindObjectOfType<HP>().ChangeHealth(-1);
+                score.ResetCombo();
+            }
         }
     }
 
@@ -87,6 +91,7 @@ public class NoteObject : MonoBehaviour
         {
             score.AddScore(TypesOfHits.Hits.Miss);
         }
+        wasPressed = true;
     }
 
     private void Hit(TypesOfHits.Hits hitType)
@@ -94,6 +99,7 @@ public class NoteObject : MonoBehaviour
         //Debug.Log(hitType.ToString());
         AkSoundEngine.PostEvent("Hit_Event", gameObject);
         score.AddScore(hitType);
+        wasPressed = true;
         Destroy(gameObject);
     }
 }

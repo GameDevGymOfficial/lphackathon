@@ -53,7 +53,10 @@ public class SettingsManager : MonoBehaviour
         if (e.isKey)
         {
             if (e.keyCode == KeyCode.Escape)
+            {
                 EndBinding();
+                return;
+            }
 
             BindKey(e.keyCode, keyIndexToBind);
             EndBinding();

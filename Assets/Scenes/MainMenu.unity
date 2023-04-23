@@ -258,6 +258,21 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 23.666672
       objectReference: {fileID: 0}
+    - target: {fileID: 6669697603700629089, guid: d89865739c113ea4a964bdb3f84e8f89,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6669697603780713537, guid: d89865739c113ea4a964bdb3f84e8f89,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6669697604067765585, guid: d89865739c113ea4a964bdb3f84e8f89,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6669697604612937201, guid: d89865739c113ea4a964bdb3f84e8f89,
         type: 3}
       propertyPath: isGameScene
