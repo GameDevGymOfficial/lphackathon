@@ -5,9 +5,18 @@ public class RocketLauncher : MonoBehaviour
     [SerializeField] private GameObject rocketPrefab;
     [SerializeField] private Transform[] launchPoints;
 
-    public void LaunchTo(Transform target, int index)
+    private void Awake()
     {
-        var rocket = SpawnRocket(launchPoints[index]);
+        NoteObject[] notes = FindObjectsOfType<NoteObject>();
+        foreach (NoteObject note in notes)
+        {
+            note.OnHit += LaunchTo;
+        }
+    }
+
+    public void LaunchTo(NoteObject target, RowIndex index)
+    {
+        var rocket = SpawnRocket(launchPoints[(int)index]);
 
         rocket.SetTargetMovement(target);
     }

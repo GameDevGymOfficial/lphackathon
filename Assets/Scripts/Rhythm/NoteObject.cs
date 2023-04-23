@@ -4,8 +4,9 @@ using UnityEngine;
 public class NoteObject : MonoBehaviour
 {
     public Action OnMiss;
-    public Action OnHit;
+    public Action<NoteObject, RowIndex> OnHit;
 
+    private RowHolder rowHolder;
     private GameManager gameManager;
     private ScoreHPScript score;
 
@@ -21,6 +22,7 @@ public class NoteObject : MonoBehaviour
         if (isEnd)
             gameManager = FindObjectOfType<GameManager>();
 
+        rowHolder = GetComponentInParent<RowHolder>();
         score = FindObjectOfType<ScoreHPScript>();
     }
 
@@ -55,10 +57,9 @@ public class NoteObject : MonoBehaviour
     }
     public void OnMissDeletion()
     {
-                Miss();
-                Debug.Log("Absolute miss");
-                FindObjectOfType<HP>().ChangeHealth(-1);
-
+        Miss();
+        Debug.Log("Absolute miss");
+        FindObjectOfType<HP>().ChangeHealth(-1);
     }
 
     private void TryHit()
@@ -96,9 +97,13 @@ public class NoteObject : MonoBehaviour
 
     private void Hit(HitType hitType)
     {
-        OnHit?.Invoke();
-        AkSoundEngine.PostEvent("Hit_Event", gameObject);
+        OnHit?.Invoke(this, rowHolder.Index);
         score.AddScore(hitType);
-        Destroy(gameObject);
+    }
+    public void HitDestroy()
+    {
+        AkSoundEngine.PostEvent("Hit_Event", gameObject);
+        gameObject.SetActive(false);
+        Destroy(gameObject, 5);
     }
 }

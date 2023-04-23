@@ -3,13 +3,15 @@ using UnityEngine;
 public class Rocket : MonoBehaviour
 {
     private Rigidbody2D rb2d;
+    private float boomDistance = 0.5f;
 
+    private bool isBoom;
     private bool isTargetMovement;
 
     [SerializeField] private float forwardSpeed = 1f;
     [SerializeField] private float targetSpeed = 1f;
 
-    private Transform target;
+    private NoteObject target;
 
     private void Awake()
     {
@@ -24,15 +26,7 @@ public class Rocket : MonoBehaviour
             MoveForward();
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Asteroid"))
-        {
-            Boom();
-        }
-    }
-
-    public void SetTargetMovement(Transform target)
+    public void SetTargetMovement(NoteObject target)
     {
         this.target = target;
         isTargetMovement = true;
@@ -48,11 +42,22 @@ public class Rocket : MonoBehaviour
     }
     private void MoveToTarget()
     {
-        rb2d.MovePosition(Vector3.MoveTowards(transform.position, target.position, Time.deltaTime * targetSpeed));
+        if (target == null)
+            return;
+        if (isBoom)
+            return;
+
+        rb2d.MovePosition(Vector3.MoveTowards(transform.position, target.transform.position, Time.deltaTime * targetSpeed));
+
+        if ((transform.position - target.transform.position).magnitude < boomDistance)
+            Boom();
     }
 
     private void Boom()
     {
-        Destroy(gameObject);
+        isBoom = true;
+        target.HitDestroy();
+        gameObject.SetActive(false);
+        Destroy(gameObject, 5);
     }
 }
