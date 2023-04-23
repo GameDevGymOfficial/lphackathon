@@ -58,6 +58,6 @@ public class Rocket : MonoBehaviour
         isBoom = true;
         target.HitDestroy();
         gameObject.SetActive(false);
-        Destroy(gameObject, 5);
+        Destroy(gameObject, 3);
     }
 }

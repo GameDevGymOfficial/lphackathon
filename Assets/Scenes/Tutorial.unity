@@ -781,6 +781,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Tempo: 240
   DownScroll: 1
+  timingList: []
+  Note: {fileID: 0}
 --- !u!1001 &524966857
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1438,6 +1440,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1132771640, guid: d89865739c113ea4a964bdb3f84e8f89, type: 3}
+      propertyPath: orthographic size
+      value: 5.625
+      objectReference: {fileID: 0}
     - target: {fileID: 12285149946654057, guid: d89865739c113ea4a964bdb3f84e8f89,
         type: 3}
       propertyPath: data.WwiseObjectReference

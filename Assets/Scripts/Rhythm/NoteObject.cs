@@ -1,10 +1,13 @@
 using System;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class NoteObject : MonoBehaviour
 {
+    Animator animator;
     public Action OnMiss;
     public Action<NoteObject, RowIndex> OnHit;
+    public UnityEvent OnDestroyHit;
 
     private RowHolder rowHolder;
     private GameManager gameManager;
@@ -19,6 +22,7 @@ public class NoteObject : MonoBehaviour
 
     private void Awake()
     {
+        animator = GetComponentInChildren<Animator>();
         if (isEnd)
             gameManager = FindObjectOfType<GameManager>();
 
@@ -102,8 +106,9 @@ public class NoteObject : MonoBehaviour
     }
     public void HitDestroy()
     {
+        OnDestroyHit?.Invoke();
         AkSoundEngine.PostEvent("Hit_Event", gameObject);
         gameObject.SetActive(false);
-        Destroy(gameObject, 5);
+        Destroy(gameObject, 3);
     }
 }
