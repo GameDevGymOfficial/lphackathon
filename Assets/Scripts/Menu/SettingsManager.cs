@@ -94,6 +94,7 @@ public class SettingsManager : MonoBehaviour
         if((keys[0]==KeyCode.Alpha1 || keys[0] == KeyCode.Keypad1) && (keys[1] == KeyCode.Alpha9 || keys[1] == KeyCode.Keypad9) && (keys[2] == KeyCode.Alpha8 || keys[2] == KeyCode.Keypad8) && (keys[3] == KeyCode.Alpha5 || keys[3] == KeyCode.Keypad5))
         {
             Debug.Log("Secret");
+            GetComponent<Animator>().Play("Dlorian");
             SecretEvent?.Post(gameObject);
         }
         Debug.Log("0:"+keys[0]);
