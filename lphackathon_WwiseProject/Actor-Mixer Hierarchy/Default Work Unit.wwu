@@ -163,6 +163,9 @@
 				<RandomSequenceContainer Name="New Random Container_01" ID="{ABC5D258-8A02-4B7B-8F84-5C03BEE32B53}" ShortID="1061761472">
 					<PropertyList>
 						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-10</Value>
+							</ValueList>
 							<ModifierList>
 								<ModifierInfo>
 									<Modifier Name="" ID="{30B99EBF-5C6C-41FD-B9ED-EC4615FD05A4}"/>
@@ -183,7 +186,7 @@
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-15</Value>
+										<Value>-22</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -212,7 +215,7 @@
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-15</Value>
+										<Value>-22</Value>
 									</ValueList>
 									<ModifierList>
 										<ModifierInfo>
@@ -244,6 +247,28 @@
 						</Sound>
 					</ChildrenList>
 				</RandomSequenceContainer>
+				<Sound Name="MI_SFX 01" ID="{371C10FF-B5A7-4206-8329-49255C6A0CB3}" ShortID="991545209">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A7D8F147-CAE1-43DC-A3DB-060A31B45D4A}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="SFX" ID="{781C1806-853B-4530-B247-16BC2578C705}" WorkUnitID="{8F90D724-7D71-48B6-A8E1-F21EB87344FC}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="MI_SFX 01" ID="{B15C7301-DB95-4FC6-88BE-75B921BF302B}">
+							<Language>SFX</Language>
+							<AudioFile>MI_SFX 01.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="684575148"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="MI_SFX 01" ID="{B15C7301-DB95-4FC6-88BE-75B921BF302B}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

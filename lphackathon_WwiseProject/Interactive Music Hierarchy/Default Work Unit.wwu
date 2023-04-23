@@ -57,6 +57,7 @@
 											<PropertyList>
 												<Property Name="IsFolder" Type="bool" Value="True"/>
 											</PropertyList>
+											<ReferenceList/>
 											<TransitionInfo/>
 										</MusicTransition>
 									</TransitionList>
@@ -110,7 +111,7 @@
 						</MusicSegment>
 						<MusicSegment Name="Cold_Space" ID="{CA577D54-F7D9-44C8-8811-4E79271C830E}" ShortID="932299909">
 							<PropertyList>
-								<Property Name="EndPosition" Type="Real64" Value="90000"/>
+								<Property Name="EndPosition" Type="Real64" Value="90172.461671314"/>
 								<Property Name="Volume" Type="Real64">
 									<ModifierList>
 										<ModifierInfo>

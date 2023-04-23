@@ -38,6 +38,7 @@ public class GameManager : MonoBehaviour
     }
     public void Lose()
     {
+        AkSoundEngine.PostEvent("StopAll",gameObject);
         menuManager.SwitchMenu(menuManager.GameOverMenu);
     }
 

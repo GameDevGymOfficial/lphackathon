@@ -78,6 +78,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="UI_Event" ID="{900E09F5-C385-47E2-A7AA-819E5D9B81C3}">
+							<ChildrenList>
+								<Action Name="" ID="{61089972-AFC9-4F44-8193-48F029863454}" ShortID="1041545127">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MI_SFX 01" ID="{371C10FF-B5A7-4206-8329-49255C6A0CB3}" WorkUnitID="{16C1F349-5515-4037-AAEB-E96D09A5C22C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Event Name="StopAll" ID="{2E5CE7C4-7F3C-47AD-93F4-6215E09F83FE}">
