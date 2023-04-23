@@ -5,10 +5,13 @@
 			<ChildrenList>
 				<SoundBank Name="Main_SoundBank" ID="{8E0B1B34-9278-4A03-9D19-7C013BB86B49}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Resume" ID="{4E17EE61-FF1D-4309-92D6-4D3B3531A838}" WorkUnitID="{F125AB88-EE99-489F-B796-876314265743}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Hit_Event" ID="{71C9A38D-0D96-4355-B2BE-1FF9C087DEC6}" WorkUnitID="{F125AB88-EE99-489F-B796-876314265743}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Menu_music" ID="{E056DA3F-9B64-43E3-B61A-C683AF4505B9}" WorkUnitID="{F125AB88-EE99-489F-B796-876314265743}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Lvl_one" ID="{FA35B551-C4AA-4517-89E2-73AA09F9D451}" WorkUnitID="{F125AB88-EE99-489F-B796-876314265743}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="StopAll" ID="{2E5CE7C4-7F3C-47AD-93F4-6215E09F83FE}" WorkUnitID="{F125AB88-EE99-489F-B796-876314265743}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Miss_Event" ID="{49EE88AA-98BE-4D95-9748-317CB428A344}" WorkUnitID="{F125AB88-EE99-489F-B796-876314265743}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Pause" ID="{CE376A39-2873-4FDF-B33D-A084A2738CA2}" WorkUnitID="{F125AB88-EE99-489F-B796-876314265743}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

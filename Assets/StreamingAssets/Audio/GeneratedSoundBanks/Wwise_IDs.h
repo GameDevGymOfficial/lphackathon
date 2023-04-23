@@ -17,6 +17,9 @@ namespace AK
         static const AkUniqueID LVL_ONE = 177180936U;
         static const AkUniqueID MENU_MUSIC = 4055567060U;
         static const AkUniqueID MISS_EVENT = 1131770108U;
+        static const AkUniqueID PAUSE = 3092587493U;
+        static const AkUniqueID RESUME = 953277036U;
+        static const AkUniqueID STOPALL = 3086540886U;
     } // namespace EVENTS
 
     namespace GAME_PARAMETERS

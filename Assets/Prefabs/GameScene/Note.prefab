@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3326151009149314142}
   - component: {fileID: 3326151009149314129}
   - component: {fileID: 3326151009149314128}
+  - component: {fileID: 2072554921926598931}
   m_Layer: 0
   m_Name: Note
   m_TagString: Note
@@ -27,8 +28,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3326151009149314140}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.25, y: 2, z: 0}
-  m_LocalScale: {x: 1.5000007, y: 1.5000007, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -98,9 +99,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8758795f438efa94fbc7c7d2a4fa9457, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rowKeyCode: 0
+  isEnd: 0
 --- !u!58 &3326151009149314128
 CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3326151009149314140}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.38
+--- !u!70 &2072554921926598931
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -113,5 +130,5 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.38
+  m_Size: {x: 0.76, y: 1.5}
+  m_Direction: 0

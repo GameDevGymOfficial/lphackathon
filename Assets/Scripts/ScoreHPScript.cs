@@ -3,12 +3,12 @@ using UnityEngine;
 
 public class ScoreHPScript : MonoBehaviour
 {
+    private HP hp;
     private GameManager gameManager;
 
-    [SerializeField] private TextMeshProUGUI Text;
+    [SerializeField] private TextMeshProUGUI[] Text;
 
     private int score = 0;
-    private int health = 6;
     private const float NOTE_VALUE = 100;
     private float coefficient;
     private int combo = 0;
@@ -17,12 +17,18 @@ public class ScoreHPScript : MonoBehaviour
 
     private void Awake()
     {
+        hp = FindObjectOfType<HP>();
         gameManager = FindObjectOfType<GameManager>();
     }
 
-    private void SetScoreText(int score)
+    private void AddScore(int delta)
     {
-        Text.text = score.ToString();
+        score += delta;
+
+        foreach (var item in Text)
+        {
+            item.text = score.ToString();
+        }
     }
     public void AddScore(TypesOfHits.Hits hits)
     {
@@ -31,43 +37,44 @@ public class ScoreHPScript : MonoBehaviour
             case TypesOfHits.Hits.Perfect:
                 coefficient = 1;
                 hitCount[0]++;
-                combo++;
+                UpdateCombo();
                 break;
             case TypesOfHits.Hits.Great:
                 coefficient = 0.8f;
                 hitCount[1]++;
-                combo++;
+                UpdateCombo();
                 break;
             case TypesOfHits.Hits.Ok:
                 coefficient = 0.6f;
                 hitCount[2]++;
-                combo++;
+                UpdateCombo();
                 break;
             case TypesOfHits.Hits.Bad:
                 coefficient = 0.4f;
                 hitCount[3]++;
-                combo = 0;
+                ResetCombo();
                 break;
             case TypesOfHits.Hits.Miss:
                 coefficient = 0f;
                 hitCount[4]++;
-                combo = 0;
-                ChangeHealth(-1);
+                ResetCombo();
+                hp.ChangeHealth(-1);
                 break;
         }
-        score += (int)(NOTE_VALUE * coefficient);
-        SetScoreText(score);
+
+        AddScore((int)(NOTE_VALUE * coefficient));
+
         if (combo % 10 == 0)
         {
-            ChangeHealth(1);
-        }
-        if (health == 0)
-        {
-            gameManager.Lose();
+            hp.ChangeHealth(1);
         }
     }
-    public void ChangeHealth(int change)
+    public void UpdateCombo()
     {
-        health += change;
+        combo++;
+    }
+    public void ResetCombo()
+    {
+        combo = 0;
     }
 }

@@ -4,7 +4,16 @@
 		<UserProjectSettings Name="" ID="{66E49D74-268C-476D-89D9-0EA71A257AA5}">
 			<PropertyList>
 				<Property Name="AudioFilesImporter\Path" Type="string" Value="C:\Users\Alex\Downloads\"/>
+				<Property Name="Event Action List\{2E5CE7C4-7F3C-47AD-93F4-6215E09F83FE}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{2EE522E2-A9CA-4B97-B05C-3F437B001F02}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{49EE88AA-98BE-4D95-9748-317CB428A344}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{4E17EE61-FF1D-4309-92D6-4D3B3531A838}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{64D1E61C-F443-4708-AC4F-3F9AF94D067E}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{71C9A38D-0D96-4355-B2BE-1FF9C087DEC6}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{A55D677C-1953-4400-B615-1271C2072C8C}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{CE376A39-2873-4FDF-B33D-A084A2738CA2}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{E056DA3F-9B64-43E3-B61A-C683AF4505B9}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{FA35B551-C4AA-4517-89E2-73AA09F9D451}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
 				<Property Name="EventView\FilterMode2" Type="int32" Value="2"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
@@ -37,6 +46,10 @@
 				<Property Name="MonitoringManager\GameObjectFilter\GameObjectFilterVersion" Type="int32" Value="1"/>
 				<Property Name="MonitoringManager\GameObjectFilter\GameObjectFiltersEnable" Type="bool" Value="True"/>
 				<Property Name="MonitoringManager\GameObjectFilter\x64_GameObjectFilters" Type="string" Value=""/>
+				<Property Name="Music Transition List\{48422CB8-7A2D-47E4-A97B-87B5990D6884}\Scroll Position" Type="int32" Value="0"/>
+				<Property Name="Music Transition List\{48422CB8-7A2D-47E4-A97B-87B5990D6884}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Music Transition List\{B2B61825-B773-46C4-9AEE-73541FF6D01E}\Scroll Position" Type="int32" Value="0"/>
+				<Property Name="Music Transition List\{B2B61825-B773-46C4-9AEE-73541FF6D01E}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="ObjectTabPanel\x64_CurrentObjects_{0EB86C86-246D-4549-9973-BEE1DE1842D7}" Type="string" Value=""/>
 				<Property Name="ObjectTabPanel\x64_CurrentObjects_{D5805147-985E-4C5B-B817-369AF1B7184D}" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\AudioSelectionChannel1\ProjectExplorer2LastScrollState" Type="int32" Value="0"/>

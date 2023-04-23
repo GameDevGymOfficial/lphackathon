@@ -33,6 +33,28 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Lvl_2" ID="{2EE522E2-A9CA-4B97-B05C-3F437B001F02}">
+							<ChildrenList>
+								<Action Name="" ID="{96726584-EB4B-420B-ACC0-80E477A68A2B}" ShortID="309784668">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Cold_Space" ID="{CA577D54-F7D9-44C8-8811-4E79271C830E}" WorkUnitID="{CCDFFEEE-BBB8-4A74-9EF4-3EE08B83B71E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Lvl_3" ID="{A55D677C-1953-4400-B615-1271C2072C8C}">
+							<ChildrenList>
+								<Action Name="" ID="{9E5AF7BD-706B-4D7A-8A67-0CBBE3916641}" ShortID="856166787">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Cold_Space" ID="{CA577D54-F7D9-44C8-8811-4E79271C830E}" WorkUnitID="{CCDFFEEE-BBB8-4A74-9EF4-3EE08B83B71E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="SFX" ID="{49B51D69-6C73-44F4-9B7E-3E04131CD1A8}" ShortID="1060640831">
@@ -61,6 +83,50 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Event Name="StopAll" ID="{2E5CE7C4-7F3C-47AD-93F4-6215E09F83FE}">
+					<ChildrenList>
+						<Action Name="" ID="{EF5D65BC-AFAB-42D3-A0AB-FD2EA1DA70B7}" ShortID="323279654">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="A_New_Planet" ID="{FF0547C9-6D17-42C3-84C5-E2D1C2B4DB36}" WorkUnitID="{CCDFFEEE-BBB8-4A74-9EF4-3EE08B83B71E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{1F49E408-3581-4C96-A7A3-EA551A32083C}" ShortID="179181705">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Cold_Space" ID="{CA577D54-F7D9-44C8-8811-4E79271C830E}" WorkUnitID="{CCDFFEEE-BBB8-4A74-9EF4-3EE08B83B71E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Pause" ID="{CE376A39-2873-4FDF-B33D-A084A2738CA2}">
+					<ChildrenList>
+						<Action Name="" ID="{F12089AC-7D46-4233-90B0-8CD87FA7E64E}" ShortID="1063306273">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="8"/>
+							</PropertyList>
+							<ReferenceList/>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Resume" ID="{4E17EE61-FF1D-4309-92D6-4D3B3531A838}">
+					<ChildrenList>
+						<Action Name="" ID="{F1C4E0C4-966D-40E8-B189-B8D0ECD2621A}" ShortID="315392022">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="10"/>
+							</PropertyList>
+							<ReferenceList/>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

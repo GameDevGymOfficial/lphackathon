@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Rocket : MonoBehaviour
 {
-    Rigidbody2D rb2d;
+    private Rigidbody2D rb2d;
 
     private bool isTargetMovement;
 
@@ -23,6 +23,7 @@ public class Rocket : MonoBehaviour
         else
             MoveForward();
     }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Asteroid"))
@@ -44,7 +45,6 @@ public class Rocket : MonoBehaviour
     private void MoveForward()
     {
         rb2d.MovePosition((Vector2)transform.position + Vector2.up * forwardSpeed * Time.deltaTime);
-        //transform.Translate();
     }
     private void MoveToTarget()
     {

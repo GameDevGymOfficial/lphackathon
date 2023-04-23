@@ -29,7 +29,7 @@
 				<GameParameter Id="2918011349" Name="MasterVolume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="2228651116" Type="User" Language="SFX" Hash="{C00F7FDA-C2F1-D4C2-3504-FE528B5F6514}">
+		<SoundBank Id="2228651116" Type="User" Language="SFX" Hash="{A573BBED-7238-8A07-7FC5-8BD5BDF211A4}">
 			<ShortName>Main_SoundBank</ShortName>
 			<Path>Main_SoundBank.bnk</Path>
 			<Media>
@@ -91,8 +91,11 @@
 						<MediaRef Id="1066614353"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="3092587493" Name="Pause" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="953277036" Name="Resume" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3086540886" Name="StopAll" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{612AD099-6807-7181-31D1-BC5D5ED7EF01}</FileHash>
+	<FileHash>{AFF4092D-FB8C-8247-6E5D-457E7100EE96}</FileHash>
 </SoundBanksInfo>

@@ -28,6 +28,9 @@
 								<MusicTrack Name="A_New_Planet" ID="{B2B61825-B773-46C4-9AEE-73541FF6D01E}" ShortID="411634372">
 									<PropertyList>
 										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-20</Value>
+											</ValueList>
 											<ModifierList>
 												<ModifierInfo>
 													<Modifier Name="" ID="{4CB1E568-BF5F-43D9-B068-B6FCB6FFB3D7}"/>
@@ -128,6 +131,9 @@
 								<MusicTrack Name="Cold_Space" ID="{48422CB8-7A2D-47E4-A97B-87B5990D6884}" ShortID="493008087">
 									<PropertyList>
 										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-20</Value>
+											</ValueList>
 											<ModifierList>
 												<ModifierInfo>
 													<Modifier Name="" ID="{C1E7D9C3-BB0F-4E8E-9F1C-CEFA0AB74D60}"/>

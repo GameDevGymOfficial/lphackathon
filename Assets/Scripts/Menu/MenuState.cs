@@ -1,10 +1,10 @@
-﻿using UnityEngine.Events;
-using UnityEngine;
+﻿using UnityEngine;
+using System;
 
 public class MenuState
 {
-    public UnityEvent OnEnter;
-    public UnityEvent OnExit;
+    public Action OnEnter;
+    public Action OnExit;
     
     private GameObject uiPanel;
 

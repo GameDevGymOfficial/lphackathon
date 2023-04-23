@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class NoteHolder : MonoBehaviour
 {
-    public float Tempo;
-    public bool DownScroll = true;
+    [SerializeField] private float Tempo;
+    [SerializeField] private bool DownScroll = true;
 
     private void Start()
     {
@@ -17,8 +17,9 @@ public class NoteHolder : MonoBehaviour
             transform.position -= new Vector3(0, Tempo * Time.deltaTime, 0f);
         }
     }
+
     [ContextMenu("Move")]
-    void Move()
+    private void Move()
     {
         transform.position = new Vector3(transform.position.x, (Tempo/60) * 15.28f, 0f);
     }

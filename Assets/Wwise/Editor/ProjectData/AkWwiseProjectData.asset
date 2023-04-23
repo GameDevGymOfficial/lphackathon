@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: d795017ae16299468b18ab7e144a3993
     GuidInternal: 
-    m_lastTime: -8585194602136375913
+    m_lastTime: -8585194394051601262
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 24d7908f717db648a8e1f21eb87344fc
     GuidInternal: 
-    m_lastTime: -8585194393872894168
+    m_lastTime: -8585194223944837608
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -100,7 +100,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 0acfd8e08d80734cb4b1ae1139d67a15
     GuidInternal: 
-    m_lastTime: -8585194394337341864
+    m_lastTime: -8585193910966481411
     List:
     - name: Main_SoundBank
       guid: 341b0b8e7892034a9d197c013bb86b49
@@ -128,7 +128,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 88ab25f199ee9f48b796876314265743
     GuidInternal: 
-    m_lastTime: -8585194394345187141
+    m_lastTime: -8585193904996061886
     List:
     - name: Hit_Event
       guid: 8da3c971960d5543b2be1ff9c087dec6
@@ -147,6 +147,46 @@ MonoBehaviour:
         ObjectType: 3
         guid: 8da3c971960d5543b2be1ff9c087dec6
       Path: Events\Default Work Unit\SFX\Hit_Event
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Lvl_2
+      guid: e222e52ecaa9974bb05c3f437b001f02
+      id: 2397100950
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 88ab25f199ee9f48b796876314265743
+      - ElementName: Music
+        ObjectType: 4
+        guid: d5d194782d1957419d654ca8d1f47757
+      - ElementName: Lvl_2
+        ObjectType: 3
+        guid: e222e52ecaa9974bb05c3f437b001f02
+      Path: Events\Default Work Unit\Music\Lvl_2
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Lvl_3
+      guid: 7c675da553190044b6151271c2072c8c
+      id: 2397100951
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 88ab25f199ee9f48b796876314265743
+      - ElementName: Music
+        ObjectType: 4
+        guid: d5d194782d1957419d654ca8d1f47757
+      - ElementName: Lvl_3
+        ObjectType: 3
+        guid: 7c675da553190044b6151271c2072c8c
+      Path: Events\Default Work Unit\Music\Lvl_3
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -227,6 +267,40 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Pause
+      guid: 396a37ce7328df4fb33da084a2738ca2
+      id: 3092587493
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 88ab25f199ee9f48b796876314265743
+      - ElementName: Pause
+        ObjectType: 3
+        guid: 396a37ce7328df4fb33da084a2738ca2
+      Path: Events\Default Work Unit\Pause
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Resume
+      guid: 61ee174e1dff094392d64d3b3531a838
+      id: 953277036
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 88ab25f199ee9f48b796876314265743
+      - ElementName: Resume
+        ObjectType: 3
+        guid: 61ee174e1dff094392d64d3b3531a838
+      Path: Events\Default Work Unit\Resume
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: SFX
       guid: 691db549736cf4449b7e3e04131cd1a8
       id: 393239870
@@ -244,6 +318,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: StopAll
+      guid: c4e75c2e3c7fad4793f46215e09f83fe
+      id: 3086540886
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 88ab25f199ee9f48b796876314265743
+      - ElementName: StopAll
+        ObjectType: 3
+        guid: c4e75c2e3c7fad4793f46215e09f83fe
+      Path: Events\Default Work Unit\StopAll
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -256,7 +347,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 5caf8477f756d847987dd11674f2a039
     GuidInternal: 
-    m_lastTime: -8585194393872974205
+    m_lastTime: -8585194223950466739
     List:
     - name: MasterVolume
       guid: a53122a1900a694bb2cfe17a3511ecd8
@@ -335,7 +426,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 43ce5a3e7c525f4681f8177ab31ca203
     GuidInternal: 
-    m_lastTime: -8585194602136395914
+    m_lastTime: -8585194394051786502
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -349,7 +440,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 6d5e66c283d92e43af81276d4fcfcc5a
     GuidInternal: 
-    m_lastTime: -8585194602136385912
+    m_lastTime: -8585194394051730585
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -363,10 +454,10 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 32d755fa09de544db7a74a7172b68e44
     GuidInternal: 
-    m_lastTime: -8585194602136385912
+    m_lastTime: -8585194394051664608
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0500000006000000070000000c0000000d000000
+  ExpandedWaapiItemIds: 050000000600000007000000080000000b0000000c000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

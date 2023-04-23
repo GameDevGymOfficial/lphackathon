@@ -3,17 +3,27 @@ using UnityEngine;
 
 public class NoteObject : MonoBehaviour
 {
+    private GameManager gameManager;
     private ScoreHPScript score;
-    [SerializeField]private KeyCode rowKeyCode;
+
+    [SerializeField] private bool isEnd;
+
+    private KeyCode rowKeyCode;
+
     private bool canBePressed;
-    private float buttonPosition;
-    private float notePosition;
+    private float buttonPositionY;
 
     private void Awake()
     {
-        rowKeyCode = GetComponentInParent<RowHolder>().RowCode;
+        if (isEnd)
+            gameManager = FindObjectOfType<GameManager>();
 
         score = FindObjectOfType<ScoreHPScript>();
+    }
+
+    private void Start()
+    {
+        rowKeyCode = GetComponentInParent<RowHolder>().RowCode;
     }
 
     private void Update()
@@ -22,7 +32,7 @@ public class NoteObject : MonoBehaviour
         {
             if (canBePressed)
             {
-                HitLogic();
+                TryHit();
             }
         }
     }
@@ -32,7 +42,12 @@ public class NoteObject : MonoBehaviour
         if (collision.CompareTag("Button"))
         {
             canBePressed = true;
-            buttonPosition = collision.transform.position.y;
+            buttonPositionY = collision.transform.position.y;
+            Debug.Log("Enter");
+            if (isEnd)
+            {
+                gameManager.Win();
+            }
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
@@ -40,45 +55,45 @@ public class NoteObject : MonoBehaviour
         if (collision.CompareTag("Button"))
         {
             canBePressed = false;
+
+            Debug.Log("Absolute miss");
+            FindObjectOfType<HP>().ChangeHealth(-1);
+            score.ResetCombo();
         }
     }
 
-    private void HitLogic()
+    private void TryHit()
     {
-        notePosition = gameObject.transform.position.y;
-        float judgment = notePosition - buttonPosition;
-        if (Math.Abs(judgment) > ((int)TypesOfHits.Hits.Bad / 100f))
+        float notePositionY = gameObject.transform.position.y;
+        float judgment = Math.Abs(notePositionY - buttonPositionY) * 100;
+        
+        if (judgment < (int)TypesOfHits.Hits.Perfect)
         {
-            //Debug.Log("Miss");
+            Hit(TypesOfHits.Hits.Perfect);
+        }
+        else if (judgment < (int)TypesOfHits.Hits.Great)
+        {
+            Hit(TypesOfHits.Hits.Great);
+        }
+        else if (judgment < (int)TypesOfHits.Hits.Ok)
+        {
+            Hit(TypesOfHits.Hits.Ok);
+        }
+        else if (judgment < (int)TypesOfHits.Hits.Bad)
+        {
+            Hit(TypesOfHits.Hits.Bad);
+        }
+        else
+        {
             score.AddScore(TypesOfHits.Hits.Miss);
-            return;
         }
-        if (Math.Abs(judgment) > ((int)TypesOfHits.Hits.Ok / 100f))
-        {
-            //Debug.Log("Bad");
-            AkSoundEngine.PostEvent("Hit_Event", gameObject);
-            Destroy(gameObject);
-            score.AddScore(TypesOfHits.Hits.Bad);
-            return;
-        }
-        if (Math.Abs(judgment) > ((int)TypesOfHits.Hits.Great / 100f))
-        {
-            //Debug.Log("Ok");
-            AkSoundEngine.PostEvent("Hit_Event", gameObject);
-            Destroy(gameObject);
-            score.AddScore(TypesOfHits.Hits.Ok);
-            return;
-        }
-        if (Math.Abs(judgment) > ((int)TypesOfHits.Hits.Perfect / 100f))
-        {
-            //Debug.Log("Great");
-            AkSoundEngine.PostEvent("Hit_Event", gameObject);
-            Destroy(gameObject);
-            score.AddScore(TypesOfHits.Hits.Great);
-            return;
-        }
+    }
+
+    private void Hit(TypesOfHits.Hits hitType)
+    {
+        //Debug.Log(hitType.ToString());
         AkSoundEngine.PostEvent("Hit_Event", gameObject);
+        score.AddScore(hitType);
         Destroy(gameObject);
-        score.AddScore(TypesOfHits.Hits.Perfect);
     }
 }

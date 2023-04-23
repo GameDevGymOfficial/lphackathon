@@ -41,6 +41,11 @@ public class MenuManager : MonoBehaviour
         GameWinMenu = new MenuState(gameWinUI);
         GameOverMenu = new MenuState(gameOverUI);
 
+        GameWinMenu.OnEnter += Pause;
+        GameWinMenu.OnExit += Resume;
+        GameOverMenu.OnEnter += Pause;
+        GameOverMenu.OnExit += Resume;
+
         MainMenu = new MenuState(mainUI);
         LVLSelectionMenu = new MenuState(lvlSelectionMenu);
         SettingsMenu = new MenuState(settingsUI);
@@ -91,6 +96,15 @@ public class MenuManager : MonoBehaviour
     public void Back() => SwitchMenu(previousMenu);
     public void Settings() => SwitchMenu(SettingsMenu);
     public void SelectLevel() => SwitchMenu(LVLSelectionMenu);
+    
+    private void Pause()
+    {
+        Time.timeScale = 0;
+    }
+    private void Resume()
+    {
+        Time.timeScale = 1;
+    }
 
     public void SwitchMenu(MenuState newMenuState)
     {
