@@ -1,4 +1,4 @@
-# [Project "Space"](https://lnu.edu.ua)
+# [AstroRhythm](https://lnu.edu.ua)
 ### Project for `'Hackathon 4.0'`
 #### Contacts:
 ##### Yurasov Volodymyr
@@ -17,8 +17,7 @@
 * [Wwise](https://www.audiokinetic.com/en/products/wwise) - Audiokinetic's software for interactive media and video games, available for free to non-commercial users and under license for commercial video game developers. It features an audio authoring tool and a cross-platform sound engine.
 ## 🔌 How to run project
 ### For Users:
-Download `Project "Space"` and start `.exe` file
+Download `AstroRhythm` and start `.exe` file
 ### For Developers:
-[Download](https://github.com/GameDevGymOfficial/lphackathon/archive/refs/heads/main.zip) `"Project Space"` from repository. Open `Unity Hub`, choose section `Projects`, click on `Open` and change us repository.
-## 🕹️ Overview
+[Download](https://github.com/GameDevGymOfficial/lphackathon/archive/refs/heads/main.zip) `AstroRhythm` from repository. Open `Unity Hub`, choose section `Projects`, click on `Open` and change us repository.
 
