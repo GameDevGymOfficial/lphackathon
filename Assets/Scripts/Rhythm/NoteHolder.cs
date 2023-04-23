@@ -4,6 +4,8 @@ public class NoteHolder : MonoBehaviour
 {
     [SerializeField] private float Tempo;
     [SerializeField] private bool DownScroll = true;
+    [SerializeField] private float[] timingList;
+    [SerializeField] private GameObject Note;
     private bool started;
 
     private void Start()
@@ -16,7 +18,6 @@ public class NoteHolder : MonoBehaviour
         if (Input.anyKeyDown & !started)
         {
             started = true;
-            AkSoundEngine.PostEvent("Lvl_one", gameObject);
         }
         if (DownScroll & started)
         {
@@ -27,6 +28,11 @@ public class NoteHolder : MonoBehaviour
     [ContextMenu("Move")]
     private void Move()
     {
-        transform.position = new Vector3(transform.position.x, (Tempo / 60) * 15.28f, 0f);
+        foreach (var timing in timingList)
+        {
+            transform.position = new Vector3(transform.position.x, ((Tempo / 60) * timing)-0.75f, 0f);
+            Instantiate(Note, transform.position,transform.rotation);
+        }
+        transform.position = new Vector3(transform.position.x,  - 0.75f, 0f);
     }
 }

@@ -13,7 +13,6 @@ public class NoteObject : MonoBehaviour
 
     private KeyCode rowKeyCode;
 
-    private bool wasPressed;
     private bool canBePressed;
     private float buttonPositionY;
 
@@ -88,7 +87,6 @@ public class NoteObject : MonoBehaviour
             score.AddScore(HitType.Miss);
             Miss();
         }
-        wasPressed = true;
     }
 
     private void Miss()
@@ -99,10 +97,8 @@ public class NoteObject : MonoBehaviour
     private void Hit(HitType hitType)
     {
         OnHit?.Invoke();
-        //Debug.Log(hitType.ToString());
         AkSoundEngine.PostEvent("Hit_Event", gameObject);
         score.AddScore(hitType);
-        wasPressed = true;
         Destroy(gameObject);
     }
 }

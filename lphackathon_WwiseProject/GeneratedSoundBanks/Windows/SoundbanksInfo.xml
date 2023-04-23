@@ -29,7 +29,7 @@
 				<GameParameter Id="2918011349" Name="MasterVolume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="2228651116" Type="User" Language="SFX" Hash="{74DF1453-3C65-5591-FEEF-66471EA3A378}">
+		<SoundBank Id="2228651116" Type="User" Language="SFX" Hash="{2447A7DC-AE01-E947-C142-0070511873BF}">
 			<ShortName>Main_SoundBank</ShortName>
 			<Path>Main_SoundBank.bnk</Path>
 			<Media>
@@ -40,6 +40,10 @@
 				<File Id="226741675" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Explosion.wav</ShortName>
 					<CachePath>SFX/Explosion_10C4C929.wem</CachePath>
+				</File>
+				<File Id="316166974" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Cold_Space.wav</ShortName>
+					<CachePath>SFX/Cold_Space_D79FB2B7.wem</CachePath>
 				</File>
 				<File Id="388262762" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Hit_Hurt4.wav</ShortName>
@@ -69,6 +73,16 @@
 						<MediaRef Id="846654128"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="2397100950" Name="Lvl_2" DurationType="OneShot" DurationMin="90" DurationMax="90">
+					<MediaRefs>
+						<MediaRef Id="316166974"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2397100951" Name="Lvl_3" DurationType="OneShot" DurationMin="90" DurationMax="90">
+					<MediaRefs>
+						<MediaRef Id="316166974"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="177180936" Name="Lvl_one" DurationType="OneShot" DurationMin="37.090893" DurationMax="37.090893">
 					<MediaRefs>
 						<MediaRef Id="514013620"/>
@@ -93,5 +107,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{92B71989-76AD-A2A6-30C5-DA63EDEA5ED5}</FileHash>
+	<FileHash>{53318067-3FA3-84A8-73DC-F84301E04E3D}</FileHash>
 </SoundBanksInfo>

@@ -14,6 +14,8 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID HIT_EVENT = 577874077U;
+        static const AkUniqueID LVL_2 = 2397100950U;
+        static const AkUniqueID LVL_3 = 2397100951U;
         static const AkUniqueID LVL_ONE = 177180936U;
         static const AkUniqueID MENU_MUSIC = 4055567060U;
         static const AkUniqueID MISS_EVENT = 1131770108U;
