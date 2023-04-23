@@ -21,4 +21,5 @@
 [Download](https://github.com/GameDevGymOfficial/lphackathon/archive/refs/heads/main.zip) `AstroRhythm` from repository. Open `Builds` folder and start `.exe` file
 ### For Developers:
 [Download](https://github.com/GameDevGymOfficial/lphackathon/archive/refs/heads/main.zip) `AstroRhythm` from repository. Open `Unity Hub`, choose section `Projects`, click on `Open` and change us repository.
-
+> The legendary Delorian is traveling in the depths of space, try to find him. 
+> `I wonder when the first movie was released?`
