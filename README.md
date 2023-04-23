@@ -18,7 +18,7 @@
 * [Adobe Photoshop](https://www.adobe.com/ua/products/photoshop.html) - Combine, retouch and compose images. Color old black and white photos. Remove unwanted objects from the photo. Or turn an uninteresting background into an exotic paradise. Everyone can do it with Photoshop.
 ## 🔌 How to run project
 ### For Users:
-Download `AstroRhythm` and start `.exe` file
+[Download](https://github.com/GameDevGymOfficial/lphackathon/archive/refs/heads/main.zip) `AstroRhythm` from repository. Open `Builds` folder and start `.exe` file
 ### For Developers:
 [Download](https://github.com/GameDevGymOfficial/lphackathon/archive/refs/heads/main.zip) `AstroRhythm` from repository. Open `Unity Hub`, choose section `Projects`, click on `Open` and change us repository.
 
